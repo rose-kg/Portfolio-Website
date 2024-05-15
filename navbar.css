@@ -1,54 +1,44 @@
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* margin-top: 20px; */
-    /* margin-left: 10px; */
-    height: 100px;
-    position: fixed;
-    /* top: 0;
-    left: 0; */
-    z-index: 10;
-    background-color:#1f2235;
-    width: 100vw;
-    
-    
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  position: fixed;
+  z-index: 10;
+  background-color: #1f2235;
+  width: 100vw;
 }
 
-.name{
-    
-    font-size: 50px;
-    color: #fff;
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    margin-left: 100px;
-    margin-top: 20px; 
-    
+.name {
+  font-size: 50px;
+  color: #fff;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
-.nav--list ul li{
-    display: inline;
-    margin-right: 50px;  
-    list-style: none;
-    
-
+.nav--list ul li {
+  display: inline;
+  margin-right: 50px;
+  list-style: none;
 }
 
-.nav--list ul li button{
-    background-color: rgb(235, 204, 166);
-    color: #1f2235;
-    width: 150px;
-    border-radius: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border:rgb(235, 204, 166) medium;
-    border: medium;
-    margin-top: 20px; 
+.nav--list ul li button {
+  background-color: rgb(235, 204, 166);
+  color: #1f2235;
+  width: 150px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: rgb(235, 204, 166) medium;
+  border: medium;
+  margin-top: 20px;
 }
 
-.nav--list ul li button:hover{
-    cursor: pointer;
-    background-color:#1f2235;
-    color:  rgb(249, 225, 196);
+.nav--list ul li button:hover {
+  cursor: pointer;
+  background-color: #1f2235;
+  color: rgb(249, 225, 196);
 }

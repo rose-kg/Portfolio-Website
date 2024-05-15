@@ -1,117 +1,115 @@
 #home-section {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background-color: #1f2235;
-  }
-  
-  .profile--container {
-    background-color: #1f2235;
-  }
-  
-  .profile {
-    display: block;
-    align-items: center;
-    position: absolute;
-    top: 60%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .profile h1 {
-    color: #fff;
-    margin-bottom: 20px;
-    font-size: 40px;
-  }
-  
-  .profile h1 span {
-    color: rgb(235, 204, 166);
-  }
-  
-  .profile h2 {
-    color: rgb(235, 204, 166);
-    margin-bottom: 5px;
-  }
-  
-  .profile p {
-    color: #fff;
-    margin-bottom: 60px;
-  }
-  
-  /* Adjusted the selector to target Font Awesome icons within .social--network--logos */
-  .social--network--logos i {
-    color: #fff; /* Change color */
-    font-size: 30px; /* Change size */
-    transition: transform 0.3s ease;
-  }
-  
-  .social--network--logos i:hover {
-    transform: scale(1.2);
-  }
-  
-  .social--network--logos {
-    display: flex;
-  }
-  
-  .social--network--logos a {
-    margin-right: 15px;
-    margin-bottom: 50px;
-  }
-  
-  .btns li {
-    display: inline;
-    list-style: none;
-  }
-  
-  .btn1 {
-    background-color: #1f2235;
-    color: #fff;
-    width: 150px;
-    border-radius: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .btn1:hover {
-    background-color: rgb(235, 204, 166);
-    color: #1f2235;
-    cursor: pointer;
-    border: #f5d1d1 solid;
-  }
-  
-  .btns li:last-child {
-    margin-left: 30px;
-  }
-  
-  img {
-    display: flex;
-    width: 360px;
-    height: 355px;
-    margin-left: 70px;
-    position: absolute;
-    left: 116.6%;
-    margin-top: -350px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-size: cover;
-  }
-  
-  .border-shadow {
-    position: absolute;
-    width: 360px;
-    height: 355px;
-    top: 0%;
-    left: 131.7%;
-    border-radius: 50%;
-    border-bottom-color: #fff;
-    box-sizing: content-box;
-    box-shadow: 0 0 15px rgb(235, 204, 166);
-    transition: transform 0.3s ease;
-  }
-  
-  .border-shadow:hover {
-    transform: scale(1.2);
-  }
-  
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #1f2235;
+}
+
+.profile--container {
+  background-color: #1f2235;
+}
+
+.profile {
+  display: block;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.profile h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.profile h1 span {
+  color: rgb(235, 204, 166);
+}
+
+.profile h2 {
+  color: rgb(235, 204, 166);
+  margin-bottom: 5px;
+}
+
+.profile p {
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.social--network--logos i {
+  color: #fff;
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social--network--logos i:hover {
+  transform: scale(1.2);
+}
+
+.social--network--logos {
+  display: flex;
+}
+
+.social--network--logos a {
+  margin-right: 15px;
+  margin-bottom: 50px;
+}
+
+.btns li {
+  display: inline;
+  list-style: none;
+}
+
+.btn1 {
+  background-color: #1f2235;
+  color: #fff;
+  width: 150px;
+  border-radius: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn1:hover {
+  background-color: rgb(235, 204, 166);
+  color: #1f2235;
+  cursor: pointer;
+  border: #f5d1d1 solid;
+}
+
+.btns li:last-child {
+  margin-left: 30px;
+}
+
+img {
+  display: flex;
+  width: 360px;
+  height: 355px;
+  margin-left: 70px;
+  position: absolute;
+  left: 116.6%;
+  margin-top: -350px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.border-shadow {
+  position: absolute;
+  width: 360px;
+  height: 355px;
+  top: 0%;
+  left: 131.7%;
+  border-radius: 50%;
+  border-bottom-color: #fff;
+  box-sizing: content-box;
+  box-shadow: 0 0 15px rgb(235, 204, 166);
+  transition: transform 0.3s ease;
+}
+
+.border-shadow:hover {
+  transform: scale(1.2);
+}

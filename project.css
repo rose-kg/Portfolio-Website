@@ -1,90 +1,80 @@
-#projects--section{
-    overflow: hidden;
-    width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    height: 100vh; 
+#projects--section {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 75rem;
+  margin: 0 auto;
+  height: 100vh;
 }
 
-.text--container{
-    display: flex;
-    
-    padding-bottom: 20px;
+.text--container {
+  display: flex;
+
+  padding-bottom: 20px;
 }
 
-.project--heading{
-    display: flex;
-    position: relative;
-    top: 20%;
-    left: 40%;
-    color: #1f2235;
-    font-size: 30px;
-   
-    
-   
+.project--heading {
+  display: flex;
+  position: relative;
+  top: 20%;
+  left: 40%;
+  color: #1f2235;
+  font-size: 30px;
 }
 
-.row2{
-    display: flex;
-    flex-wrap: wrap;
-    
-    border: 3px solid black;
-    overflow: hidden;
-    max-width: 65%;
-    height:80vh;
-    background-color:#1f2235;
-    border-radius: 30px;
-    position: relative;
-    top: 30%;
-    left: 18%;
-    /* transform: translate(-50%, -50%); */
-    margin-top: 40px;
-    
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+
+  border: 3px solid black;
+  overflow: hidden;
+  max-width: 65%;
+  height: 80vh;
+  background-color: #1f2235;
+  border-radius: 30px;
+  position: relative;
+  top: 30%;
+  left: 18%;
+  margin-top: 40px;
 }
 
-.col2{
-    flex: 1;
-    min-width: 0; 
-    /* border: 1px solid black; */
-    max-width: 100%;
-    margin-left: 60px;
-    margin-top: 15px;
-    
+.col2 {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
+  margin-left: 60px;
+  margin-top: 15px;
 }
 
-.project--name{
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
+.project--name {
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
 }
 
-.project1{
-    background-image: url('./images/project1.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 400px;
-    height: 350px;
-    border-radius: 30px;
-    
+.project1 {
+  background-image: url("./images/project1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 350px;
+  border-radius: 30px;
 }
 
-.project2{
-    background-image: url('./images/project2.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 400px;
-    height: 350px;
-    border-radius: 30px;
-
+.project2 {
+  background-image: url("./images/project2.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 350px;
+  border-radius: 30px;
 }
 
-.project--btn1{
-    position: relative;
-    top: -12%;
-    margin-left: 35px;
-
+.project--btn1 {
+  position: relative;
+  top: -12%;
+  margin-left: 35px;
 }
 
-.live{
-    margin-left: 30px;
+.live {
+  margin-left: 30px;
 }
