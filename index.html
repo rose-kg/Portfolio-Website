@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+  <title>Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <nav>
+    <h1 class='name'>Rose</h1>
+    <div class='nav--list'>
+      <ul>
+        <li><button>Home</button></li>
+        <li><button>AboutMe</button></li>
+        <li><button>Projects</button></li>
+        <li><button>ContactMe</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- home -->
+  <section id="home-section">
+    <div class="profile--container">
+      <div class="profile">
+        <h1>Hello, I'm <span>Rose Kgatle</span></h1>
+        <h2>a Web Development Learner at Umuzi</h2>
+        <p>Coding My Way to the Future: Aspiring Developer</p>
+        <div class="social--network--logos">
+          <a href="https://www.linkedin.com/in/rose-kgatle-25bbb52b0/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/rose-kg">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.instagram.com/rose_kgatle/">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/rosekgatle02">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+        <div class="btns">
+          <ul>
+            <li><button class="btn1">Hire</button></li>
+            <li><button class="btn1">Get CV</button></li>
+          </ul>
+        </div>
+        <img src="./images/profile1.jpg" alt="Profile">
+        <div class="border-shadow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+
+  <section id="about--section">
+    <h1 class="about--text">----About Me----</h1>
+    <div class="row">
+      <div class="col">
+        <div class="profile-picture"></div>
+      </div>
+      <div class="col">
+        <div class="line"></div>
+        <div class="about--content">
+          <p>
+            Ambitious and results-oriented aspiring web Developer with 8
+            months of self-directed learning experience. Possesses a basic
+            understanding of React JS and solid
+            foundation in HTML, CSS, and JavaScript, actively applying them to
+            build interactive and visually appealing web experiences.
+          </p>
+          <h1 class="stack">Stack:</h1>
+          <div class="logos">
+            <div class="html"><span>HTML</span></div>
+            <div class="css"><span>CSS</span></div>
+            <div class="javascript"><span>JavaScript</span></div>
+            <div class="react"><span>React</span></div>
+          </div>
+        </div>
+        <div class="btns">
+          <ul>
+            <li><button class="btn1">Hire</button></li>
+            <li><button>Get CV</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- projects -->
+
+  <section class="projects--section">
+    <div class="projects--container">
+      <h1 class="project--heading">----Projects----</h1>
+      <div class="row2">
+        <div class="col2">
+          <div class="text--container">
+            <h1 class="project--name">Product preview card component (HTML, CSS)</h1>
+          </div>
+          <div class="project1"></div>
+          <div class="project--btn1">
+            <button class="git">GitHub</button>
+            <button class="live">Live Demo</button>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="text--container">
+            <h1 class="project--name">Interactive rating component (HTML, CSS, JavaScript)</h1>
+          </div>
+          <div class="project2"></div>
+          <div class="project--btn1">
+            <button class="git">GitHub</button>
+            <button class="live">Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- contact -->
+
+  <section id="contact--section">
+    <form class="form">
+      <h1 class="contact--text">Contact Me</h1>
+      <div class="form--container">
+        <div class="name--container">
+          <label for="fullName"></label>
+          <input type="text" id="fullName" name="fullName" placeholder="Full Name" required />
+        </div>
+        <div class="email--container">
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Email" required />
+        </div>
+        <div class="subject--container">
+          <label for="subject"></label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required />
+        </div>
+        <div class="message--container">
+          <label for="message"></label>
+          <textarea id="message" name="message" placeholder="Message" required></textarea>
+        </div>
+      </div>
+    </form>
+    <button class="submit--button" type="submit">Submit</button>
+  </section>
+  
+  <!-- footer -->
+
+  <section id="footer--section">
+    <div class="footer">
+      <div class="footer--nav--list">
+        <ul class="list">
+          <li><button>Home</button></li>
+          <li><button>AboutMe</button></li>
+          <li><button>Projects</button></li>
+          <li><button>ContactMe</button></li>
+        </ul>
+      </div>
+      <p class="copyright">Copyright &copy; 2024 Rose Kgatle. All Rights Reserved.</p>
+    </div>
+  </section>
+  
+</body>
+</html>

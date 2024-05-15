@@ -1,0 +1,182 @@
+#about--section{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    
+    height: 100vh;
+   
+    
+    
+}
+.about--text{
+  position: relative;
+  top: 8%;
+  left: 40%;
+  
+  
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  
+  border: 3px solid black;
+  overflow: hidden;
+  max-width: 80%;
+  background-color:#1f2235;
+  border-radius: 30px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.col {
+  flex: 1;
+  min-width: 0; 
+  /* border: 1px solid black; */
+  max-width: 100%;
+  margin-left: 40px;
+  
+ 
+}
+
+
+
+.about--content {
+  padding: 0; /* Add padding as needed */
+  /* Additional styling for the text content */
+  /* margin-left: -100px; */
+  margin-left: -20px;
+  color: #f5e6e6;
+  margin-top: 10px;
+  
+}
+
+
+
+
+.profile-picture {
+    background-image: url('./images/profile4.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 478px;
+    height: 550px;
+    margin-left: -40px;
+    border: 1px solid black;
+   
+
+  }
+
+  .html{
+    background-image: url('./images/html5.svg');
+    background-size: cover;
+    background-position: center;
+    width: 65px;
+    height: 70px;
+   
+    
+  }
+  
+  .css{
+    background-image: url('./images/css5.svg');
+    background-size: cover;
+    background-position: center;
+    width: 65px;
+    height: 70px;
+  }
+
+  .javascript{
+    background-image: url('./images/javascript1.svg');
+    background-size: cover;
+    background-position: center;
+    width: 65px;
+    height: 70px;
+  }
+
+  .react{
+    background-image: url('./images/react2.svg');
+    background-size: cover;
+    background-position: center;
+    width: 65px;
+    height: 70px;
+
+    
+  }
+
+  .stack{
+    margin-top: 50px;
+  }
+
+  .logos{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 5px;
+justify-content: space-evenly;
+left:-10%;
+
+
+
+   
+    
+  }
+
+  p{
+    
+    width: 100%; /* Adjust the width as needed */ 
+  }
+
+  .logos span{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 10px;
+    
+  }
+
+  .logos .javascript span{
+    display: block;
+    margin-left: -5px;
+  }
+
+  .btns li{
+    display: inline;
+    list-style: none;
+  
+}
+
+button{
+    
+    background-color: #1f2235;
+    color: #fff;
+    width: 150px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 120px;
+    
+}
+
+button:hover{
+    background-color: rgb(235, 204, 166);
+    color: #1f2235;
+    cursor: pointer;
+    border: #f5d1d1 solid;
+    
+}
+
+.btns li:last-child{
+    margin-left: 30px;
+
+}
+
+
+
+
+
+  /*React log attribution - React by Icon Mafia on IconScout */
+
