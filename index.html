@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-  <title>Navbar</title>
+  <title>Home</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="home.css">
@@ -26,10 +26,10 @@
     <h1 class='name'>Rose</h1>
     <div class='nav--list'>
       <ul>
-        <li><button>Home</button></li>
-        <li><button>AboutMe</button></li>
-        <li><button>Projects</button></li>
-        <li><button>ContactMe</button></li>
+        <li><button onclick="window.location.href='index.html'">Home</button></li>
+        <li><button onclick="window.location.href='about.html'">About</button></li>
+        <li><button onclick="window.location.href='Project.html'">Projects</button></li>
+        <li><button onclick="window.location.href='contact.html'">ContactMe</button></li>
       </ul>
     </div>
   </nav>
@@ -57,8 +57,14 @@
         </div>
         <div class="btns">
           <ul>
-            <li><button class="btn1">Hire</button></li>
-            <li><button class="btn1">Get CV</button></li>
+           
+            <li><button class="btn1" onclick="window.location.href='contact.html'">Hire</button></li>
+           
+            <li>
+              <a href="./images/Rose-kgatle-CV-2024.pdf" class="btn-link" target="_blank">
+                <button class="btn1">Get CV</button>
+              </a>
+            </li>
           </ul>
         </div>
         <img src="./images/profile1.jpg" alt="Profile">
@@ -166,15 +172,19 @@
     <div class="footer">
       <div class="footer--nav--list">
         <ul class="list">
-          <li><button>Home</button></li>
-          <li><button>AboutMe</button></li>
-          <li><button>Projects</button></li>
-          <li><button>ContactMe</button></li>
+          <li><button onclick="window.location.href='index.html'">Home</button></li>
+          <li><button onclick="window.location.href='about.html'">About</button></li>
+          <li><button onclick="window.location.href='Project.html'">Projects</button></li>
+          <li><button onclick="window.location.href='contact.html'">ContactMe</button></li>
+          </li>
         </ul>
       </div>
       <p class="copyright">Copyright &copy; 2024 Rose Kgatle. All Rights Reserved.</p>
     </div>
   </section>
+
+
+
   
 </body>
 </html>
