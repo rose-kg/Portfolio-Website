@@ -63,19 +63,20 @@
 }
 
 .btn1 {
-  background-color: #1f2235;
-  color: #fff;
-  width: 150px;
+  background-color: rgb(235, 204, 166);
+  color: #1f2235;
   border-radius: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .btn1:hover {
-  background-color: rgb(235, 204, 166);
-  color: #1f2235;
+  background-color: #fff;
+  color:rgb(235, 204, 166);
   cursor: pointer;
   border: #f5d1d1 solid;
 }
@@ -91,7 +92,7 @@ img {
   margin-left: 70px;
   position: absolute;
   left: 116.6%;
-  margin-top: -350px;
+  margin-top: -311px;
   border-radius: 50%;
   overflow: hidden;
   background-size: cover;

@@ -25,20 +25,19 @@ nav {
   list-style: none;
 }
 
-.nav--list ul li button {
-  background-color: rgb(235, 204, 166);
-  color: #1f2235;
+.nav--list ul li a{
+  
+  color:rgb(235, 204, 166);
   width: 150px;
-  border-radius: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: rgb(235, 204, 166) medium;
-  border: medium;
   margin-top: 20px;
 }
 
-.nav--list ul li button:hover {
+.nav--list ul li a:hover {
   cursor: pointer;
   background-color: #1f2235;
-  color: rgb(249, 225, 196);
+  color: #fff;
+  text-decoration: underline rgb(235, 204, 166);
+  
 }

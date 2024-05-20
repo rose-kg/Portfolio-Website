@@ -3,13 +3,14 @@
   width: 100vw;
   max-width: 75rem;
   margin: 0 auto;
-  height: 100vh;
+  
+  
 }
 
 .text--container {
   display: flex;
 
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .project--heading {
@@ -19,6 +20,7 @@
   left: 40%;
   color: #1f2235;
   font-size: 30px;
+ 
 }
 
 .row2 {
@@ -71,10 +73,37 @@
 
 .project--btn1 {
   position: relative;
-  top: -12%;
-  margin-left: 35px;
+  top: 8%;
+  border-radius: 20px;
+  justify-content: space-between;
+
+
 }
 
-.live {
+
+.live, .git{
   margin-left: 30px;
+  background-color: rgb(235, 204, 166);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 20px;
+}
+
+
+
+.live:hover{
+  background-color:#fff;
+  color:rgb(235, 204, 166);
+  cursor: pointer;
+  cursor: pointer;
+  border: #f5d1d1 solid;
+}
+
+.git:hover{
+  background-color:#fff;
+  color:rgb(235, 204, 166);
+  cursor: pointer;
+  border: #f5d1d1 solid;
 }

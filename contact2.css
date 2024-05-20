@@ -79,8 +79,10 @@
   
   .submit--button {
     display: flex;
-    width: 150px;
-    padding: 10px 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     background-color: rgb(235, 204, 166);
     color: #1f2235;
     border: none;
@@ -88,14 +90,19 @@
     cursor: pointer;
     position: absolute;
     left: 54%;
-    bottom: 30%; /* Position the button 10% from the bottom of the container */
-    transform: translate(-50%, 0); /* Center the button horizontally */
+    bottom: 20%; 
+    transform: translate(-50%, 0); 
   }
   
   
   
   
   .submit--button:hover {
-    background-color: #fff;
+    background-color:#fff;
+    color:rgb(235, 204, 166);
+    cursor: pointer;
+    cursor: pointer;
+    border: #f5d1d1 solid;
   }
   
+

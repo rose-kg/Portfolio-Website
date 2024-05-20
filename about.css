@@ -117,20 +117,22 @@ p {
   list-style: none;
 }
 
-button {
-  background-color: #1f2235;
-  color: #fff;
-  width: 150px;
+.btn-link {
+  background-color:  rgb(235, 204, 166);
+  color: #1f2235;
   border-radius: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: space-between;
-  margin-top: 120px;
+  display: inline-flex;
+  margin-top: 90px;
 }
 
-button:hover {
-  background-color: rgb(235, 204, 166);
-  color: #1f2235;
+.btn-link:hover {
+  background-color:#fff;
+  color:rgb(235, 204, 166);
   cursor: pointer;
   border: #f5d1d1 solid;
 }

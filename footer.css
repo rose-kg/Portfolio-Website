@@ -1,5 +1,5 @@
 #footer--section {
-  height: 25vh;
+  height: 17vh;
   width: 100vw;
   overflow: hidden;
   background-color: #1f2235;
@@ -13,6 +13,7 @@ footer {
   z-index: 10;
   background-color: #1f2235;
   width: 100vw;
+ 
 }
 
 .footer--nav--list ul li {
@@ -20,30 +21,34 @@ footer {
   margin-right: 50px;
   list-style: none;
   position: relative;
-  left: 25%;
+  left: 35%;
+  
+  
 }
-
-.footer--nav--list ul li button {
-  background-color: rgb(235, 204, 166);
-  color: #1f2235;
-  width: 150px;
-  border-radius: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: rgb(235, 204, 166) medium;
-  border: medium;
+.list{
   margin-top: 30px;
 }
 
-.footer--nav--list ul li button:hover {
+.footer--nav--list ul li a {
+  
+  color:rgb(235, 204, 166);
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  
+}
+
+.footer--nav--list ul li a:hover {
   cursor: pointer;
   background-color: #1f2235;
-  color: rgb(249, 225, 196);
+  color: #fff ;
+  text-decoration: underline rgb(235, 204, 166);
 }
 
 .copyright {
-  margin-left: 560px;
-  margin-top: 50px;
+  margin-left: 600px;
+  margin-top: 20px;
   color: #fff;
-  font-size: 15px;
+  font-size: 10px;
 }
