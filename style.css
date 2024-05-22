@@ -17,7 +17,19 @@ a {
   cursor: pointer;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.1s ease;
+}
 
+.nav-link:hover {
+  background-color: lightgray;
+}
+
+.nav-link.active {
+  color: white;
+}
 
 
 
