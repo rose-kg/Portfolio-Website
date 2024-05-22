@@ -8,7 +8,7 @@
 }
 .about--text {
   position: relative;
-  top: 8%;
+  top: 15%;
   left: 40%;
 }
 
@@ -22,9 +22,10 @@
   background-color: #1f2235;
   border-radius: 30px;
   position: relative;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+  height: 75vh;
 }
 
 .col {
