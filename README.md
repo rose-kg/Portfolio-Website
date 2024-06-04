@@ -31,6 +31,7 @@ This is a personal portfolio website showcasing my web development projects, ski
 
 - HTML
 - CSS
+- Javascipt
 
 ## Acknowledgements
 
