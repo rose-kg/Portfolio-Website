@@ -52,3 +52,23 @@ footer {
   color: #fff;
   font-size: 10px;
 }
+
+
+@media (max-width: 1024px) {
+  .footer .footer--links a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .footer--links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .footer--links a {
+    font-size: 14px;
+  }
+}

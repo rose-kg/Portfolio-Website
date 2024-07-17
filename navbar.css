@@ -42,3 +42,49 @@ nav {
   text-decoration: underline rgb(235, 204, 166);
   
 }
+
+@media (max-width: 1024px) {
+  .navbar .menu a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar .dropdown {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .navbar .dropdown-menu a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+  }
+
+  .navbar .dropdown-menu a:hover {
+    background-color: #444;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar .dropdown-menu {
+    width: 150px;
+  }
+}

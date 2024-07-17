@@ -94,3 +94,34 @@
   cursor: pointer;
   border: #f5d1d1 solid;
 }
+
+
+@media (max-width: 1024px) {
+  .projects--heading {
+    font-size: 32px;
+  }
+
+  .project--description {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects--heading {
+    font-size: 28px;
+  }
+
+  .project--description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects--heading {
+    font-size: 24px;
+  }
+
+  .project--description {
+    font-size: 12px;
+  }
+}

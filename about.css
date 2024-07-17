@@ -141,3 +141,33 @@ p {
 .btns li:last-child {
   margin-left: 30px;
 }
+
+@media (max-width: 1024px) {
+  .about--heading {
+    font-size: 32px;
+  }
+
+  .about--text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about--heading {
+    font-size: 28px;
+  }
+
+  .about--text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about--heading {
+    font-size: 24px;
+  }
+
+  .about--text {
+    font-size: 12px;
+  }
+}
