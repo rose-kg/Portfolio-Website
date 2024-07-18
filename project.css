@@ -117,9 +117,7 @@
 }
 
 @media (max-width: 480px) {
-  .projects--heading {
-    font-size: 24px;
-  }
+
 
   .project--description {
     font-size: 12px;
