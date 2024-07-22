@@ -170,13 +170,33 @@ img {
   }
   .profile{
     position: absolute;
-    left: 25%;
+    left: 29%;
+  }
+  img{
+    position: absolute;
+    left: 80%;
+    top: 130%;
+    width: 75%;
+    height: 75%;
+    
+  }
+
+  .border-shadow{
+    display: flex;
+    position: absolute;
+    left: 109%;
+    top: 6.9%;
+    width: 74.5%;
+    height: 75%;
+    
   }
   .btn1{
+
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
+
 
 }
