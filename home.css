@@ -115,22 +115,41 @@ img {
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 1024px) {
 
-  }
-  img{
-    display: flex;
-   position: absolute;
-   left: 100%
-  }
-  .border-shadow{
-    display: flex;
-    position: absolute;
-    left: 115.3%;
-    
-  }
   
 
+
+
+
+@media (max-width: 1280px) {
+  .home--heading { font-size: 34px; }
+  .home--text { font-size: 17px; }
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+img{
+  display: flex;
+ position: absolute;
+ left: 100%
+}
+.border-shadow{
+  display: flex;
+  position: absolute;
+  left: 115.3%;
+  
+}
+
+@media (max-width: 912px) {
+  .home--heading { font-size: 30px; }
+  .home--text { font-size: 15px; }
+}
+
+@media (max-width: 820px) {
+  .home--heading { font-size: 28px; }
+  .home--text { font-size: 14px; }
+}
 
 @media only screen and (max-width: 768px) {
   .profile h1 {
@@ -158,45 +177,42 @@ img {
   }
 }
 
-@media only screen and (max-width: 480px) {
-  .profile h1 {
-    font-size: 20px;
-  }
-  .profile h2{
-    font-size: 12px;
-  }
-  .profile p{
-    font-size: 10px;
-  }
-  .profile{
-    position: absolute;
-    left: 29%;
-  }
-  img{
-    position: absolute;
-    left: 80%;
-    top: 130%;
-    width: 75%;
-    height: 75%;
-    
-  }
+@media (max-width: 540px) {
+  .home--heading { font-size: 24px; }
+  .home--text { font-size: 12px; }
+}
 
-  .border-shadow{
-    display: flex;
-    position: absolute;
-    left: 109%;
-    top: 6.9%;
-    width: 74.5%;
-    height: 75%;
-    
-  }
-  .btn1{
+@media (max-width: 430px) {
+  .home--heading { font-size: 22px; }
+  .home--text { font-size: 11px; }
+}
 
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-  }
+@media (max-width: 414px) {
+  .home--heading { font-size: 20px; }
+  .home--text { font-size: 10px; }
+}
 
+@media (max-width: 412px) {
+  .home--heading { font-size: 18px; }
+  .home--text { font-size: 9px; }
+}
 
+@media (max-width: 390px) {
+  .home--heading { font-size: 16px; }
+  .home--text { font-size: 8px; }
+}
+
+@media (max-width: 375px) {
+  .home--heading { font-size: 14px; }
+  .home--text { font-size: 7px; }
+}
+
+@media (max-width: 360px) {
+  .home--heading { font-size: 12px; }
+  .home--text { font-size: 6px; }
+}
+
+@media (max-width: 344px) {
+  .home--heading { font-size: 10px; }
+  .home--text { font-size: 5px; }
 }
