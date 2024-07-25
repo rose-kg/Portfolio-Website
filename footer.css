@@ -95,11 +95,11 @@ footer {
 }
 
 @media (max-width: 375px) {
-  .footer { font-size: 6px; }
+  
 }
 
 @media (max-width: 360px) {
-  .footer { font-size: 5px; }
+  
 }
 
 @media (max-width: 344px) {
