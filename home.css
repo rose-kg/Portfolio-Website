@@ -76,7 +76,7 @@
 
 .btn1:hover {
   background-color: #fff;
-  color:rgb(235, 204, 166);
+  color: rgb(235, 204, 166);
   cursor: pointer;
   border: #f5d1d1 solid;
 }
@@ -115,144 +115,173 @@ img {
   transform: scale(1.2);
 }
 
-
-
-@media (max-width: 1280px) {
-  .home--heading { font-size: 34px; }
-  .home--text { font-size: 17px; }
-}
-
 @media only screen and (max-width: 1024px) {
-
 }
-img{
+img {
   display: flex;
- position: absolute;
- left: 100%
+  position: absolute;
+  left: 100%;
 }
-.border-shadow{
+.border-shadow {
   display: flex;
   position: absolute;
   left: 115.3%;
-  
-}
-
-@media (max-width: 912px) {
-  .home--heading { font-size: 30px; }
-  .home--text { font-size: 15px; }
-}
-
-@media (max-width: 820px) {
-  .home--heading { font-size: 28px; }
-  .home--text { font-size: 14px; }
 }
 
 @media only screen and (max-width: 768px) {
   .profile h1 {
     font-size: 30px;
   }
-  .profile h2{
+  .profile h2 {
     font-size: 17px;
   }
 
-  img{
+  img {
     position: absolute;
-    left: 95%;
+    left: 90%;
     width: 70%;
     height: 100%;
-    
   }
-  .border-shadow{
+  .border-shadow {
     display: flex;
     position: absolute;
-    left: 113%;
-    top: -8%;
+    left: 108%;
+    top: -9.7%;
     width: 70%;
     height: 100%;
-    
   }
 }
 
-@media (max-width: 540px) {
-  .home--heading { font-size: 24px; }
-  .home--text { font-size: 12px; }
-}
-
-@media (max-width: 430px) {
-  .home--heading { font-size: 22px; }
-  .home--text { font-size: 11px; }
-}
-
-@media (max-width: 414px) {
-  .home--heading { font-size: 20px; }
-  .home--text { font-size: 10px; }
-}
-
-@media (max-width: 412px) {
-  .home--heading { font-size: 18px; }
-  .home--text { font-size: 9px; }
-}
-
-@media (max-width: 390px) {
-  .home--heading { font-size: 16px; }
-  .home--text { font-size: 8px; }
-}
-
-@media (max-width: 376px) {
-  .profile h1{
-    font-size: 12px;
+@media only screen and (max-width: 426px) {
+  .profile h1 {
+    font-size: 15px;
     margin-left: 30px;
-
   }
-
-  .profile h2{
+  .profile h2 {
+    font-size: 13px;
+    margin-left: 30px;
+  }
+  p {
     font-size: 10px;
     margin-left: 30px;
   }
-  p{
+  img {
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    left: 80%;
+    top: 175%;
+  }
+  .border-shadow {
+    width: 45%;
+    height: 70%;
+    position: absolute;
+    left: 104.8%;
+    top: 5.5%;
+  }
+  .social--network--logos i {
+    font-size: 20px;
+  }
+  .social--network--logos {
+    margin-left: 30px;
+    margin-top: -30px;
+  }
+
+  .btn1 {
+    display: inline-flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 30px;
+    font-size: 12px;
+    position: fixed;
+    top: 70%;
+  }
+  .btns li:last-child {
+    position: absolute;
+    left: 12%;
+    margin-left: 200px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .profile h1 {
+    font-size: 12px;
+    margin-left: 30px;
+  }
+
+  .profile h2 {
+    font-size: 10px;
+    margin-left: 30px;
+  }
+  p {
     font-size: 8px;
     margin-left: 30px;
   }
 
-  .social--network--logos i{
+  .social--network--logos i {
     font-size: 20px;
-    
   }
   .social--network--logos {
     margin-left: 30px;
+    margin-top: -30px;
   }
-.btn1{
-  display: inline-flex;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  margin-left: 30px;
-  font-size: 12px;
-}
-img{
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  top: 150%;
-  left: 80%;
- 
-}
-.border-shadow{
-  width: 120px;
-  height: 119px;
-  position: absolute;
-  top: 26%;
-  left: 111%;
-}
+  .btn1 {
+    display: inline-flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 30px;
+    font-size: 12px;
+    position: fixed;
+    top: 70%;
+  }
+  .btns li:last-child {
+    position: absolute;
+    left: 12%;
+    margin-left: 200px;
+  }
+  img {
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    top: 190%;
+    left: 75%;
+  }
+  .border-shadow {
+    width: 120px;
+    height: 128px;
+    position: absolute;
+    top: 7.3%;
+    left: 106%;
+  }
 }
 
-@media (max-width: 360px) {
-  .home--heading { font-size: 12px; }
-  .home--text { font-size: 6px; }
-}
-
-@media (max-width: 344px) {
-  .home--heading { font-size: 10px; }
-  .home--text { font-size: 5px; }
+@media only screen and (max-width: 320px) {
+  #home-section {
+    height: 107vh;
+    width: 113vw;
+  }
+  p {
+    font-size: 7px;
+  }
+  .profile h2 {
+    font-size: 8px;
+  }
+  img {
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    top: 190%;
+    left: 73%;
+  }
+  .border-shadow {
+    width: 120px;
+    height: 128px;
+    position: absolute;
+    top: 4.3%;
+    left: 108%;
+  }
 }
