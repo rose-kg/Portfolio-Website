@@ -230,6 +230,21 @@ img{
   margin-left: 30px;
   font-size: 12px;
 }
+img{
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 150%;
+  left: 80%;
+ 
+}
+.border-shadow{
+  width: 120px;
+  height: 119px;
+  position: absolute;
+  top: 26%;
+  left: 111%;
+}
 }
 
 @media (max-width: 360px) {
