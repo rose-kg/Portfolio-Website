@@ -1,6 +1,7 @@
 #footer--section {
   height: 17vh;
   width: 100vw;
+
   overflow: hidden;
   background-color: #1f2235;
 }
@@ -52,3 +53,6 @@ footer {
   color: #fff;
   font-size: 10px;
 }
+
+
+

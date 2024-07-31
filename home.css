@@ -18,24 +18,26 @@
   transform: translate(-50%, -50%);
 }
 
-.profile h1 {
+.profile .home--h1 {
   color: #fff;
   margin-bottom: 20px;
   font-size: 40px;
 }
 
-.profile h1 span {
+.profile .home--h1 span {
   color: rgb(235, 204, 166);
 }
 
-.profile h2 {
+.profile .home--h2 {
   color: rgb(235, 204, 166);
   margin-bottom: 5px;
+  word-break: break-word;
 }
 
-.profile p {
+.profile .home--p {
   color: #fff;
   margin-bottom: 60px;
+  word-break: break-word;
 }
 
 .social--network--logos i {
@@ -57,12 +59,12 @@
   margin-bottom: 50px;
 }
 
-.btns li {
+.home--btns li {
   display: inline;
   list-style: none;
 }
 
-.btn1 {
+.home--btn1 {
   background-color: rgb(235, 204, 166);
   color: #1f2235;
   border-radius: 20px;
@@ -74,18 +76,18 @@
   margin-top: 30px;
 }
 
-.btn1:hover {
+.home--btn1:hover {
   background-color: #fff;
-  color:rgb(235, 204, 166);
+  color: rgb(235, 204, 166);
   cursor: pointer;
   border: #f5d1d1 solid;
 }
 
-.btns li:last-child {
+.home--btn1 li:last-child {
   margin-left: 30px;
 }
 
-img {
+.home--img {
   display: flex;
   width: 360px;
   height: 355px;
@@ -113,4 +115,220 @@ img {
 
 .border-shadow:hover {
   transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1024px) {
+
+.home--img {
+  display: flex;
+  position: absolute;
+  left: 93%;
+  top: 108%;
+}
+.border-shadow {
+  display: flex;
+  position: absolute;
+  left: 108.3%;
+  
+}
+.home--btn1 {
+  display: inline-flex;
+  position: fixed;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  top: 95%;
+}
+.home--btns li:last-child {
+  position: absolute;
+  left: 12%;
+  margin-left: 110px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .profile .home--h1 {
+    font-size: 30px;
+  }
+  .profile .home--h2 {
+    font-size: 17px;
+  }
+
+  .home--img {
+    position: absolute;
+    left: 90%;
+    width: 70%;
+    height: 100%;
+    top: 120%;
+  }
+  .border-shadow {
+    display: flex;
+    position: absolute;
+    left: 111.5%;
+    top: -1.5%;
+    width: 70%;
+    height: 100%;
+  }
+  .home--btn1 {
+    display: inline-flex;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left:-10px;
+    font-size: 12px;
+    position: fixed;
+    top: 85%;
+  }
+  .home--btns li:last-child {
+    position: absolute;
+    left: 12%;
+    margin-left: 60px;
+  }
+
+}
+
+@media only screen and (max-width: 426px) {
+  .profile .home--h1 {
+    font-size: 15px;
+    margin-left: 30px;
+  }
+  .profile .home--h2 {
+    font-size: 13px;
+    margin-left: 30px;
+    max-width: 70%;
+
+  }
+  .home--p {
+    font-size: 10px;
+    margin-left: 30px;
+    max-width: 70%;
+    
+  }
+  .home--img {
+    width: 55%;
+    height: 80%;
+    position: absolute;
+    left: 60%;
+    top: 150%;
+  }
+  .border-shadow {
+    width: 54%;
+    height: 80%;
+    position: absolute;
+    left: 85.8%;
+    top: 7%;
+  }
+  .social--network--logos i {
+    font-size: 20px;
+  }
+  .social--network--logos {
+    margin-left: 30px;
+    margin-top: -30px;
+  }
+
+  .home--btn1 {
+    display: inline-flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 30px;
+    font-size: 12px;
+    position: fixed;
+    top: 80%;
+  }
+  .home--btns li:last-child {
+    position: absolute;
+    left: 12%;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .profile .home--h1 {
+    font-size: 12px;
+    margin-left: 30px;
+  }
+
+  .profile .home--h2 {
+    font-size: 10px;
+    margin-left: 30px;
+    max-width: 70%;
+
+  }
+  .home--p {
+    font-size: 9px;
+    margin-left: 30px;
+    max-width: 70%;
+  }
+
+  .social--network--logos i {
+    font-size: 20px;
+  }
+  .social--network--logos {
+    margin-left: 30px;
+    margin-top: -30px;
+  }
+  .home--btn1 {
+    display: inline-flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 30px;
+    font-size: 12px;
+    position: fixed;
+    top: 80%;
+  }
+  .home--btns li:last-child {
+    position: absolute;
+    left: 12%;
+    margin-left: 30px;
+  }
+  .home--img {
+    width: 58%;
+    height: 80%;
+    position: absolute;
+    top: 160%;
+    left: 60%;
+  }
+  .border-shadow {
+    width: 58%;
+    height: 80%;
+    position: absolute;
+    top: 4.3%;
+    left: 88%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #home-section {
+    height: 115vh;
+    width: 113vw;
+  }
+  .profile .home--p {
+    font-size: 12px;
+    max-width: 60%;
+  }
+  .profile .home--h1 {
+    font-size: 12px;
+  }
+  .profile .home--h2{
+    font-size: 14px;
+    max-width: 70%;
+  }
+  .home--img {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 133%;
+    left: 54%;
+  }
+  .border-shadow {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 3%;
+    left: 85.5%;
+  }
 }
