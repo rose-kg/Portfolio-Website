@@ -1,9 +1,9 @@
 #about--section {
   width: 100vw;
-  min-height: 100vh; 
+  min-height: 100vh; /* Ensure it covers the full height */
   overflow: hidden;
   /* background-color: #1f2235; */
-  position: relative; 
+  position: relative; /* Ensure content stays in place */
   
   margin-top: 150px;
 }
@@ -15,7 +15,7 @@
   top: -3%; /* Adjust as needed */
   /* left: 50%; */ 
   color: black;
-  max-width: 80%; 
+  max-width: 80%; /* Limit width for readability */
   margin-left: 150px;
   margin-bottom: 30px;
 }
@@ -24,10 +24,10 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 60%;
-  justify-content: center;
+  justify-content: center; /* Center content */
   background-color: #1f2235;
   border-radius: 30px;
-  padding: 20px; 
+  padding: 20px; /* Add padding for spacing */
  margin: auto;
  border: 3px solid black;
 }
@@ -35,10 +35,10 @@
 .col {
   flex: 1;
   max-width: 100%;
-  min-height: 450px; 
+  min-height: 450px; /* Minimum height for smaller screens */
   max-height: 65vh;
   
-  margin: 10px; 
+  margin: 10px; /* Add margin for spacing */
 }
 
 .about--content {
@@ -50,8 +50,8 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  max-width: 478px; 
-  height: 100%; 
+  max-width: 478px; /* Ensure max width */
+  height: 100%; /* Maintain aspect ratio */
   border: 1px solid black;
 }
 
@@ -206,7 +206,6 @@ margin-left: 12px;
   .row {
     flex-direction: column;
     align-items: center;
-   
   }
   .profile-picture {
  
@@ -247,7 +246,6 @@ margin-left: 12px;
   .row {
     flex-direction: column;
     align-items: center;
-    
   }
   .profile-picture {
  
