@@ -1,51 +1,57 @@
 #about--section {
-  overflow: hidden;
   width: 100vw;
-  margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh; /* Ensure it covers the full height */
+  overflow: hidden;
+  /* background-color: #1f2235; */
+  position: relative; /* Ensure content stays in place */
+  
+  margin-top: 150px;
 }
+
 .about--text {
-  position: relative;
-  top: 15%;
-  left: 40%;
+  display: flex;
+  justify-content: center; 
+  /* position: absolute;
+  top: -3%; /* Adjust as needed */
+  /* left: 50%; */ 
+  color: black;
+  max-width: 80%; /* Limit width for readability */
+  margin-left: 150px;
+  margin-bottom: 30px;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  border: 3px solid black;
-  overflow: hidden;
-  max-width: 80%;
+  max-width: 60%;
+  justify-content: center; /* Center content */
   background-color: #1f2235;
   border-radius: 30px;
-  position: relative;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 75vh;
+  padding: 20px; /* Add padding for spacing */
+ margin: auto;
+ border: 3px solid black;
 }
 
 .col {
   flex: 1;
-  min-width: 0;
   max-width: 100%;
-  margin-left: 40px;
+  min-height: 450px; /* Minimum height for smaller screens */
+  max-height: 65vh;
+  
+  margin: 10px; /* Add margin for spacing */
 }
 
 .about--content {
-  padding: 0;
-  margin-left: -20px;
   color: #f5e6e6;
-  margin-top: 10px;
 }
 
 .profile-picture {
   background-image: url("./images/profile4.jpg");
   background-size: cover;
   background-position: center;
-  width: 478px;
-  height: 550px;
-  margin-left: -40px;
+  width: 100%;
+  max-width: 478px; /* Ensure max width */
+  height: 100%; /* Maintain aspect ratio */
   border: 1px solid black;
 }
 
@@ -56,7 +62,6 @@
   width: 65px;
   height: 70px;
 }
-
 .css {
   background-image: url("./images/css5.svg");
   background-size: cover;
@@ -80,23 +85,13 @@
   width: 65px;
   height: 70px;
 }
-
-.stack {
-  margin-top: 50px;
-}
-
 .logos {
   display: flex;
-  position: relative;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 30px;
-  margin-left: 5px;
+  margin-left: -35px;
   justify-content: space-evenly;
-  left: -10%;
-}
-
-p {
-  width: 100%;
 }
 
 .logos span {
@@ -110,22 +105,28 @@ p {
   margin-left: -5px;
 }
 
+
+
+.about--p {
+  width: 100%;
+}
+
+.stack{
+  margin-top: 30px;
+}
 .btns li {
   display: inline;
   list-style: none;
-}
+} 
 
 .btn-link {
   background-color: rgb(235, 204, 166);
   color: #1f2235;
   border-radius: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  justify-content: space-between;
+  padding: 10px 50px;
   display: inline-flex;
-  margin-top: 90px;
+  margin-top: 80px;
+  text-align: center;
 }
 
 .btn-link:hover {
@@ -135,199 +136,202 @@ p {
   border: #f5d1d1 solid;
 }
 
-.btns li:last-child {
-  margin-left: 30px;
-}
-
 @media (max-width: 1024px) {
   .profile-picture {
-    width: 410px;
-    height: 650px;
+    width: 100%;
   }
+  .html, .css, .javascript, .react{
+    width: 20%;
+    
+margin-left: 12px;
+  }
+  .about--text{
+    display: flex;
+    margin-left: 85px;
+  }
+  .logos{
+    margin-left: -10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .logos span{
+    font-size: 14px;
+    
+    }
   .btn-link {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-left: -15px;
+    padding: 12px 22px;
+    margin-left: 10px;
   }
 }
 
 @media (max-width: 768px) {
   .profile-picture {
-    width: 310px;
-    height: 500px;
+    width: 100%;
   }
-  p {
-    font-size: 13px;
+  .about--p{
+    font-size: 11px;
   }
-  .stack {
-    font-size: 20px;
+  .stack{
+    font-size: 18px;
+    margin-top: 7px;
   }
-  .html,
-  .css,
-  .javascript,
-  .react {
-    width: 40px;
-    height: 50px;
+  .html, .css, .javascript, .react {
+    width: 60px;
+    height: 57px;
   }
-  .logos span {
-    display: flex;
-    font-size: 12px;
-    margin-top: 70px;
+  .logos{
+    margin-top: 5px;
+  }
+  .logos .javascript, .react{
+    margin-top: 45px;
+  }
+  .html span, .css span{
+    margin-top: 63px;
+  }
+  .javascript span, .react span{
+    margin-top: 63px;
   }
   .btn-link {
-    display: inline-flex;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 22px;
-    padding-right: 22px;
-    font-size: 12px;
-    margin-top: 80px;
+    padding: 8px 18px;
+    font-size: 14px;
+    margin-top: 60px;
+
+  }
+  li:last-child{
+    margin-left: 5px;
   }
 }
 
 @media (max-width: 426px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
   .profile-picture {
-    width: 182px;
+ 
+    width: 200px;
+    height: 400px;
   }
-  .about--text{
-    position: relative;
-    top: 15%;
-    left: 18%;
-  }
-  p {
-    font-size: 10px;
-    margin-left: 1px;
-  }
-  .stack {
-    font-size: 15px;
-  }
-  .html,
-  .css,
-  .javascript,
-  .react {
-    width: 25px;
-    height: 30px;
-    margin-left: 4px;
-  }
-  .logos span {
-    display: flex;
-    font-size: 9px;
-    margin-top: 45px;
-    margin-left: 2px;
-  }
-  .logos .react span {
-    display: block;
-    margin-left: 6px;
-  }
-  .logos .javascript span {
-    display: block;
-    margin-left: -10px;
-  }
-  .btn-link {
-    display: inline-flex;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 12px;
-    padding-right: 12px;
+  .about--p{
+    margin-top: -35px;
     font-size: 12px;
-    margin-top: 60px;
-    margin-left: 70px;
   }
-  .btns li:last-child {
-    margin-left: 80px;
+  .html, 
+  .css, 
+  .javascript, 
+  .react {
+    width: 35px;
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  .logos .javascript{
+    margin-top: 40px;
+  }
+  .logos span{
+    font-size: 10px;
+  }
+  .stack{
+    margin-top: 50px;
+  }
+
+  .btn-link {
+    padding: 5px 15px;
+    font-size: 12px;
+    margin-top: 90px;
   }
 }
 
 @media (max-width: 376px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
   .profile-picture {
-    width: 160px;
+ 
+    width: 150px;
+    height: 400px;
   }
-  .about--text{
-    position: relative;
-    top: 15%;
-    left: 18%;
+  .about--p{
+    margin-top: -35px;
+    font-size: 11px;
   }
-  .logos span {
-    display: flex;
-    font-size: 8px;
-    margin-top: 45px;
+  .html, 
+  .css, 
+  .javascript, 
+  .react {
+    width: 35px;
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 40px;
   }
-  .logos .react span {
-    display: block;
-    margin-left: 6px;
+  .logos .javascript{
+    margin-top: 40px;
   }
-  .logos .javascript span {
-    display: block;
-    margin-left: -12px;
-  }
-  .logos .css span {
-    display: block;
-    margin-left: -2px;
-  }
-  .btn-link {
-    display: inline-flex;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 9px;
-    padding-right: 9px;
+  .logos span{
     font-size: 10px;
-    margin-top: 60px;
-    margin-left: 50px;
+  }
+  .stack{
+    margin-top: 40px;
+  }
+
+  .btn-link {
+    padding: 5px 15px;
+    font-size: 12px;
+    margin-top: 90px;
   }
 }
 
 @media (max-width: 320px) {
-  .row{
-    max-width: 350px;
-    margin-left: 5px;
+  #about--section {
+    padding: 10px;
   }
-  .profile-picture {
-    width: 160px;
+  .row {
+    flex-direction: column;
+    align-items: center;
   }
-  .about--text{
-    position: relative;
-    top: 15%;
-    left: 18%;
-  }
-  p{
-    margin-left: -8px;
-    font-size: 11px;
-  }
-  .stack {
-    font-size: 15px;
-    margin-top: 20px;
-    margin-left: -8px;
-  }
-  .html,
-  .css,
-  .javascript,
-  .react {
-    width: 17px;
-    height: 20px;
-    margin-left: 4px;
-    margin-top: -10px;
-  }
-  .logos span {
-    display: flex;
-    font-size: 8px;
-    margin-top: 35px;
-    margin-left: -1px;
-  }
-  .logos{
-    margin-left: -8px;
-  }
-  .btn-link {
-    display: inline-flex;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 9px;
-    padding-right: 9px;
-    font-size: 8px;
-    margin-top: 50px;
-    margin-left: 50px;
-  }
-  .btns li:first-child {
-    margin-left: -15px;
-
-  }
+    .profile-picture {
+ 
+      width: 120px;
+      height: 300px;
+    }
+    .about--p{
+      margin-top: -120px;
+      font-size: 11px;
+    }
+    .html, 
+    .css, 
+    .javascript, 
+    .react {
+      width: 25px;
+      height: 30px;
+      margin-left: 0px;
+      margin-top: 20px;
+    }
+    .logos .javascript{
+      margin-top: 100px;
+      margin-left: -100px;
+    }
+    .logos .react{
+      margin-top: 100px;
+    }
+    .logos span{
+      font-size: 8px;
+      margin-top: 50px;
+      margin-left: 2px;
+    }
+    .stack{
+      margin-top: 40px;
+    }
+  
+    .btn-link {
+      padding: 5px 7px;
+      font-size: 12px;
+      margin-top: 60px;
+      margin-left: 0px;
+    }
+    li:last-child{
+      margin-left: 15px;
+    }
+  
 }
