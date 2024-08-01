@@ -6,226 +6,175 @@
   height: 100vh;
 }
 
-.project--heading{
+.project--heading {
   position: relative;
-  top: 17%;
-  left: 40%;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 24px;
   font-weight: bold;
+  text-align: center;
 }
+
 .row2 {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
+  align-items: center;
   border: 3px solid black;
   overflow: hidden;
-  max-width: 60%;
+  width: 60%;
   height: 72vh;
   background-color: #1f2235;
   border-radius: 30px;
-  position: relative;
-  top: 0;
-  left: 18%;
-  margin-top: 130px;
+  margin: 30px auto 0;
 }
 
 .col2 {
   flex: 1;
-  min-width: 0;
-  max-width: 100%;
-  margin-left: 60px;
-  margin-top: 0px;
+  min-width: 300px;
+  max-width: 350px;
+  margin: 10px;
+  text-align: center;
 }
 
 .project--name {
   color: #fff;
   font-weight: 400;
   font-size: 22px;
+  
 }
 
 .project1 {
   background-image: url("./images/project1.jpg");
   background-size: cover;
   background-position: center;
-  width: 350px;
+  width: 100%;
   height: 300px;
+  display: flex;
   border-radius: 30px;
+  margin-right: 60px;
 }
 
 .project2 {
   background-image: url("./images/project2.jpg");
   background-size: cover;
   background-position: center;
-  width: 350px;
+  width: 100%;
   height: 300px;
   border-radius: 30px;
+ 
 }
 
 .project--btn1 {
   position: relative;
-  top: 10%;
+  margin-top: 40px;
   border-radius: 20px;
-  justify-content: space-between;
+  display: inline-flex;
+  justify-content: center;
 }
 
-.live,
-.git {
+.live, .git {
   margin-left: 17px;
   background-color: rgb(235, 204, 166);
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 40px;
   border-radius: 20px;
 }
 
-.live:hover {
-  background-color: #fff;
-  color: rgb(235, 204, 166);
-  cursor: pointer;
-  cursor: pointer;
-  border: #f5d1d1 solid;
-}
-
-.git:hover {
+.live:hover, .git:hover {
   background-color: #fff;
   color: rgb(235, 204, 166);
   cursor: pointer;
   border: #f5d1d1 solid;
 }
 
-
-
-@media screen and(max-width: 1024px) {
-  .project--heading{
-    position: relative;
+@media (max-width: 1024px) {
+  .project--heading {
     top: 12%;
-    left: 40%;
-    font-size: 24px;
-    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
   }
- .project1{
-  width: 250px;
-  margin-left: -30px;
-  margin-top: 30px;
- }
- .project2{
-  width: 250px;
-  margin-left: -30px;
-  margin-top: 30px;
 
- }
- .project--btn1{
+  .col2 {
+    min-width: 250px;
+  }
 
-  display: inline-flex;
+  .project1, .project2 {
+    height: 250px;
+  }
 
-  margin-left: -20px;
- }
- 
- .live, .git{
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 7px;
-  padding-bottom: 7px;
- }
+  .live, .git {
+    padding: 7px 20px;
+  }
 }
-
-
 
 @media (max-width: 768px) {
-  .project--heading{
-    position: relative;
+  .project--heading {
     top: 18%;
-    left: 35%;
-    font-size: 24px;
-    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  .project--name{
+
+  .project--name {
     font-size: 15px;
   }
-  .project1, .project2{
-    width: 180px;
-    height: 200px;
-    margin-left: -30px;
-    margin-top: 30px;
+
+  .col2 {
+    min-width: 200px;
   }
-  .project--btn1{
 
-    display: inline-flex;
-  
-    margin-left: -50px;
-   }
-  .live, .git{
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+  .project1, .project2 {
+    height: 200px;
+  }
+
+  .live, .git {
+    padding: 7px 15px;
     font-size: 12px;
-   } 
+  }
 }
-
-
 
 @media (max-width: 426px) {
-  .project--heading{
-    position: relative;
+  .project--heading {
     top: 18%;
-    left: 25%;
-    font-size: 24px;
-    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  .project--name{
+
+  .project--name {
     font-size: 13px;
-    margin-left: -40px;
-    margin-top: 20px;
   }
-  .project1{
-    width: 140px;
-    height: 130px;
-    margin-left: -45px;
-    margin-top: 40px;
-  }
-  .project2{
-    width: 140px;
-    height: 130px;
-    margin-left: -45px;
-    margin-top: 40px;
-  }
-  .project--btn1{
 
-    display: inline-flex;
-  
-    margin-left: -60px;
-    margin-top: 10px;
-   }
-  .live, .git{
-    padding-left: 6px;
-    padding-right: 6px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+  .col2 {
+    min-width: 150px;
+  }
+
+  .project1, .project2 {
+    height: 150px;
+  }
+
+  .live, .git {
+    padding: 4px 10px;
     font-size: 9px;
-    margin-top: -5px;
-   } 
-   .row2{
-    max-width: 350px;
-    margin-left: -40px;
-   }
+  }
 
+  .row2 {
+    width: 90%;
+    margin: 20px auto;
+  }
 }
 
-
-
-
 @media (max-width: 320px) {
-  .row2{
-    max-width: 310px;
-    margin-left: -50px;
-    border-radius: 30px;
-   }
-   .project1, .project2{
-    width: 130px;
+  .row2 {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .project1, .project2 {
     height: 130px;
-    margin-left: -52px;
-    margin-top: 30px;
+  }
+
+  .live, .git {
+    padding: 4px 10px;
+    font-size: 9px;
   }
 }
