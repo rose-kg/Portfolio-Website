@@ -160,6 +160,17 @@
   }
 }
 
-
+@media (max-width: 320px) {
+  .form{
+    margin-left: 40px;
+  }
+  .contact--heading {
+    top: 9%;
+    left: 7%;
+    font-size: 20px;
+    text-align: center;
+    
+  }
+}
 
 

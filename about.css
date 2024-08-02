@@ -212,6 +212,10 @@ margin-left: 12px;
     width: 200px;
     height: 400px;
   }
+  .about--text{
+    margin-left: 40px;
+    font-size: 20px;
+  }
   .about--p{
     margin-top: -35px;
     font-size: 12px;

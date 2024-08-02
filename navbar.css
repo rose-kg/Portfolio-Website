@@ -1,3 +1,4 @@
+/* Default navbar styles */
 nav {
   display: flex;
   align-items: center;
@@ -8,8 +9,8 @@ nav {
   background-color: #1f2235;
   width: 100vw;
   margin: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  border: 3px solid rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(0, 0, 0, 0.2);
 }
 
 .name {
@@ -22,29 +23,106 @@ nav {
   margin-top: 20px;
 }
 
-.nav--list ul li {
-  display: inline;
-  margin-right: 50px;
+.nav--list {
+  display: flex;
+  align-items: center;
+  position: relative; /* Ensure dropdown is positioned correctly */
+}
+
+.nav-items {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav--list ul li:last-child{
-  margin-left: 10px;
+.nav-items li {
+  display: inline;
+  margin-right: 20px;
 }
 
-.nav--list ul li a{
-  
-  color:rgb(235, 204, 166);
+.nav-items li:last-child {
+  margin-left: 5px;
+}
+
+.nav-link {
+  color: rgb(235, 204, 166);
   width: 150px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 20px;
+  padding: 10px 0;
+  display: inline-block;
 }
 
-.nav--list ul li a:hover {
+.nav-link:hover {
   cursor: pointer;
   background-color: #1f2235;
   color: #fff;
   text-decoration: underline rgb(235, 204, 166);
-  
-}  
+}
+
+/* Dropdown menu styles */
+.dropdown-toggle {
+  display: none; /* Hidden by default */
+  background-color: rgb(235, 204, 166);
+  color: #1f2235;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 50px;
+  font-size: 18px; /* Increase font size for better visibility */
+}
+
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  background-color: #1f2235;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 20; /* Ensure dropdown is above other content */
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  color: rgb(235, 204, 166);
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgb(235, 204, 166);
+  color: #1f2235;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 786px) {
+  .nav-items {
+    display: none; /* Hide normal menu */
+  }
+  nav{
+    width: 100%;
+  }
+.name{
+  margin-right: 60px;
+}
+  .dropdown-toggle {
+    display: block; /* Show dropdown button */
+  }
+
+  .dropdown-menu {
+    display: none; /* Hide dropdown menu initially */
+   
+  }
+}
+
+@media (max-width: 425px), (max-width: 375px), (max-width: 320px) {
+  /* No additional styles needed; they are covered in the 786px media query */
+}
