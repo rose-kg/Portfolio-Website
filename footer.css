@@ -1,3 +1,4 @@
+
 #footer--section {
   width: 100vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -15,7 +16,7 @@
 }
 
 .footer--nav--list {
-  margin-bottom: 10px; /* Add spacing below the navigation list */
+  margin-bottom: 10px;
 }
 
 .footer--nav--list ul {
@@ -25,8 +26,8 @@
 }
 
 .footer--nav--list ul li {
-  display: inline-block; /* Align list items horizontally */
-  margin: 0 15px; /* Adjust spacing between items */
+  display: inline-block;
+  margin: 0 15px;
 }
 
 .footer--nav--list ul li a {
@@ -43,23 +44,32 @@
 
 .copyright {
   color: #fff;
-  font-size: 12px; /* Adjust font size for better visibility */
+  font-size: 12px;
   margin-top: 10px;
 }
 
-/* Media Queries for smaller screens */
-@media (max-width: 786px) {
+
+@media (min-width: 786px) {
   .footer {
-    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .footer--nav--list ul li {
-    display: block; /* Stack items vertically */
-    margin: 5px 0; /* Adjust spacing */
+
+  .footer--nav--list {
+    justify-self: start;
+  }
+
+  .copyright {
+    justify-self: end;
   }
 }
 
+
 @media (max-width: 425px) {
+  .footer--nav--list ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
   .footer--nav--list ul li a {
     padding: 8px;
     font-size: 12px;
@@ -84,9 +94,6 @@
 }
 
 @media (max-width: 320px) {
-  #footer--section {
-    width: 110%;
-  }
   .footer--nav--list ul li a {
     padding: 5px;
     font-size: 8px;
