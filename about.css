@@ -1,7 +1,9 @@
 #about--section {
   width: 100vw;
+
   min-height: 100vh;
   overflow: hidden;
+
   position: relative; 
   
   margin-top: 150px;
@@ -20,10 +22,13 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 60%;
+
   justify-content: center; 
   background-color: #1f2235;
   border-radius: 30px;
   padding: 20px;
+
+
  margin: auto;
  border: 3px solid black;
 }
@@ -32,7 +37,6 @@
   flex: 1;
   min-height: 450px; 
   max-height: 65vh;
-  
   margin: 10px; 
 }
 
@@ -202,9 +206,10 @@ margin-left: 12px;
     flex-direction: column;
     align-items: center;
     max-width: 80%;
+   
   }
+  
   .profile-picture {
- 
     width: 250px;
     height: 400px;
   }
@@ -249,7 +254,6 @@ margin-left: 12px;
     max-width: 85%;
   }
   .profile-picture {
- 
     width: 250px;
     height: 400px;
   }
