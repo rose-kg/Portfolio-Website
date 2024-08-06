@@ -8,7 +8,7 @@
 
 .footer {
   display: flex;
-  flex-direction: column; /* Stack items vertically on small screens */
+  flex-direction: column; 
   align-items: center;
   justify-content: center;
   text-align: center;
