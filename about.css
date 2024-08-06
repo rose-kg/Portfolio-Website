@@ -1,8 +1,9 @@
 #about--section {
   width: 100vw;
-  min-height: 100vh; 
+
+  min-height: 100vh;
   overflow: hidden;
-  /* background-color: #1f2235; */
+
   position: relative; 
   
   margin-top: 150px;
@@ -10,10 +11,7 @@
 
 .about--text {
   display: flex;
-  justify-content: center; 
-  /* position: absolute;
-  top: -3%; /* Adjust as needed */
-  /* left: 50%; */ 
+  justify-content: center;  
   color: black;
   max-width: 80%; 
   margin-left: 150px;
@@ -24,20 +22,21 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 60%;
-  justify-content: center;
+
+  justify-content: center; 
   background-color: #1f2235;
   border-radius: 30px;
-  padding: 20px; 
+  padding: 20px;
+
+
  margin: auto;
  border: 3px solid black;
 }
 
 .col {
   flex: 1;
-  max-width: 100%;
   min-height: 450px; 
   max-height: 65vh;
-  
   margin: 10px; 
 }
 
@@ -206,16 +205,12 @@ margin-left: 12px;
   .row {
     flex-direction: column;
     align-items: center;
+    max-width: 80%;
    
   }
-  .about--text{
-    font-size: 20px;
-    margin-left: 40px;
-    
-  }
+  
   .profile-picture {
- 
-    width: 200px;
+    width: 250px;
     height: 400px;
   }
   .about--text{
@@ -224,14 +219,14 @@ margin-left: 12px;
   }
   .about--p{
     margin-top: -35px;
-    font-size: 12px;
+    font-size: 13px;
   }
   .html, 
   .css, 
   .javascript, 
   .react {
-    width: 35px;
-    height: 40px;
+    width: 40px;
+    height: 45px;
     margin-left: 0px;
     margin-top: 40px;
   }
@@ -246,7 +241,7 @@ margin-left: 12px;
   }
 
   .btn-link {
-    padding: 5px 15px;
+    padding: 8px 22px;
     font-size: 12px;
     margin-top: 90px;
   }
@@ -256,23 +251,22 @@ margin-left: 12px;
   .row {
     flex-direction: column;
     align-items: center;
-    
+    max-width: 85%;
   }
   .profile-picture {
- 
-    width: 150px;
+    width: 250px;
     height: 400px;
   }
   .about--p{
     margin-top: -35px;
-    font-size: 11px;
+    font-size: 14px;
   }
   .html, 
   .css, 
   .javascript, 
   .react {
-    width: 35px;
-    height: 40px;
+    width: 45px;
+    height: 50px;
     margin-left: 0px;
     margin-top: 40px;
   }
@@ -287,7 +281,7 @@ margin-left: 12px;
   }
 
   .btn-link {
-    padding: 5px 15px;
+    padding: 8px 22px;
     font-size: 12px;
     margin-top: 90px;
   }
@@ -300,28 +294,30 @@ margin-left: 12px;
   .row {
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+    margin-left: 40px;
   }
     .profile-picture {
  
-      width: 120px;
+      width: 200px;
       height: 300px;
     }
     .about--p{
       margin-top: -120px;
-      font-size: 11px;
+      font-size: 14px;
     }
     .html, 
     .css, 
     .javascript, 
     .react {
-      width: 25px;
-      height: 30px;
+      width: 35px;
+      height: 40px;
       margin-left: 0px;
       margin-top: 20px;
     }
     .logos .javascript{
       margin-top: 100px;
-      margin-left: -100px;
+      margin-left: -150px;
     }
     .logos .react{
       margin-top: 100px;
@@ -336,10 +332,10 @@ margin-left: 12px;
     }
   
     .btn-link {
-      padding: 5px 7px;
+      padding: 6px 12px;
       font-size: 12px;
       margin-top: 60px;
-      margin-left: 0px;
+      margin-left: 25px;
     }
     li:last-child{
       margin-left: 15px;
