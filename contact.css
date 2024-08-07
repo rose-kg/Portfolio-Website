@@ -7,7 +7,7 @@
 }
 .contact--heading{
   position: relative;
-  top: 15%;
+  top: 7%;
   left: 40%;
   font-size: 24px;
   font-weight: bold;
@@ -86,9 +86,9 @@
 
 
 
-@media screen and(max-width: 1024px) {
+@media screen and(max-width: 1025px) {
   .contact--heading {
-    top: 15%;
+    top: 50%;
     left: 40%;
     font-size: 24px;
   }
@@ -126,7 +126,7 @@
     height: 100vh;
   }
   .contact--heading {
-    top: 9%;
+    top: 5%;
     left: -5%;
     font-size: 20px;
     text-align: center;
@@ -165,7 +165,7 @@
     margin-left: 40px;
   }
   .contact--heading {
-    top: 9%;
+    top: 5%;
     left: 7%;
     font-size: 20px;
     text-align: center;
