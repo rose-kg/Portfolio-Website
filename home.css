@@ -3,6 +3,7 @@
   width: 100vw;
   overflow: hidden;
   background-color: #1f2235;
+  max-width: 100%;
 }
 
 .profile--container {
@@ -117,6 +118,7 @@ li:last-child {
   transform: scale(1.2);
 }
 
+
 @media only screen and (max-width: 1024px) {
   .home--img {
     left: 95%;
@@ -137,6 +139,81 @@ li:last-child {
     position: absolute;
     left: 12%;
     margin-left: 110px;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .profile .home--h1 {
+    font-size: 30px;
+  }
+  .profile .home--h2 {
+    font-size: 17px;
+  }
+  .home--img {
+    left: 90%;
+    top: 5%;
+    width: 60%;
+    height: 250px;
+  }
+  .border-shadow {
+    left: 90%;
+    top: 5%;
+    width: 70%;
+    height: auto;
+  }
+  .home--btn1 {
+    display: inline-flex;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: -10px;
+    font-size: 12px;
+    position: fixed;
+    top: 85%;
+  }
+  .home--btns li:last-child {
+    position: absolute;
+    left: 12%;
+    margin-left: 60px;
+  }
+}
+
+
+@media only screen and (max-width: 821px) {
+  .profile .home--h1 {
+    font-size: 30px;
+  }
+  .profile .home--h2 {
+    font-size: 17px;
+  }
+  .home--img {
+    left: 90%;
+    top: 5%;
+    width: 60%;
+    height: 250px;
+  }
+  .border-shadow {
+    left: 90%;
+    top: 5%;
+    width: 70%;
+    height: auto;
+  }
+  .home--btn1 {
+    display: inline-flex;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: -10px;
+    font-size: 12px;
+    position: fixed;
+    top: 85%;
+  }
+  .home--btns li:last-child {
+    position: absolute;
+    left: 12%;
+    margin-left: 60px;
   }
 }
 
@@ -176,6 +253,115 @@ li:last-child {
     margin-left: 60px;
   }
 }
+
+
+@media only screen and (max-width: 540px) {
+  .profile .home--h1 {
+    font-size: 15px;
+    margin-left: 30px;
+  }
+  .profile .home--h2 {
+    font-size: 13px;
+    margin-left: 30px;
+    max-width: 70%;
+  }
+  .home--p {
+    font-size: 10px;
+    margin-left: 30px;
+    max-width: 70%;
+  }
+  .home--img {
+    width: 55%;
+    height: 180px;
+    left: 60%;
+    top: 5%;
+  }
+  .border-shadow {
+    width: 55%;
+    height: auto;
+    left: 50%;
+    top: 90%;
+  }
+  .social--network--logos i {
+    font-size: 20px;
+  }
+  .social--network--logos {
+    margin-left: 30px;
+    margin-top: -30px;
+  }
+  .home--btn1 {
+    display: inline-flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 30px;
+    font-size: 12px;
+    position: fixed;
+    top: 80%;
+  }
+  .home--btns li:last-child {
+    position: absolute;
+    left: 12%;
+    margin-left: 30px;
+  }
+}
+
+
+
+@media only screen and (max-width: 431px) {
+  .profile .home--h1 {
+    font-size: 15px;
+    margin-left: 30px;
+  }
+  .profile .home--h2 {
+    font-size: 13px;
+    margin-left: 30px;
+    max-width: 70%;
+  }
+  .home--p {
+    font-size: 10px;
+    margin-left: 30px;
+    max-width: 70%;
+  }
+  .home--img {
+    width: 55%;
+    height: 180px;
+    left: 60%;
+    top: 5%;
+  }
+  .border-shadow {
+    width: 55%;
+    height: auto;
+    left: 50%;
+    top: 90%;
+  }
+  .social--network--logos i {
+    font-size: 20px;
+  }
+  .social--network--logos {
+    margin-left: 30px;
+    margin-top: -30px;
+  }
+  .home--btn1 {
+    display: inline-flex;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 30px;
+    font-size: 12px;
+    position: fixed;
+    top: 80%;
+  }
+  .home--btns li:last-child {
+    position: absolute;
+    left: 12%;
+    margin-left: 30px;
+  }
+}
+
+
 
 @media only screen and (max-width: 426px) {
   .profile .home--h1 {
@@ -287,26 +473,28 @@ li:last-child {
     width: 113vw;
   }
   .profile .home--p {
-    font-size: 12px;
-    max-width: 60%;
+    font-size: 7px;
+    max-width: 50%;
   }
   .profile .home--h1 {
-    font-size: 12px;
+    font-size: 9px;
   }
   .profile .home--h2{
-    font-size: 14px;
-    max-width: 70%;
+    font-size: 9px;
+    max-width: 60%;
   }
   .home--img {
-    width: 70%;
+    width: 55%;
     height: auto;
-    left: 50%;
+    left: 40%;
     top: 5%;
   }
-  .border-shadow {
-    width: 70%;
-    height: auto;
-    left: 50%;
-    top: 100%;
+
+  .social--network--logos i {
+    font-size: 14px;
+  }
+  .home--btn1{
+    padding: 2px 9px;
+    margin-top: 10px;
   }
 }

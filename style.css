@@ -3,14 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-
+  max-width: 100%;
 }
 
 body {
   background-color: #2a2e44;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  max-width: 100%;
 }
+
+  
 
 a {
   text-decoration: none;
