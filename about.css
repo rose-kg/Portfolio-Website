@@ -3,8 +3,8 @@
   min-height: 100vh;
   overflow: hidden;
   position: relative; 
-  
-  margin-top: 150px;
+  margin-top: 100px;
+  max-width: 100%;
 }
 
 .about--text {
@@ -46,7 +46,7 @@
   background-position: center;
   width: 100%;
   max-width: 478px; 
-  height: 100%; 
+  height: 95%; 
   border: 1px solid black;
 }
 
@@ -54,31 +54,31 @@
   background-image: url("./images/html5.svg");
   background-size: cover;
   background-position: center;
-  width: 65px;
-  height: 70px;
+  width: 40px;
+  height: 50px;
 }
 .css {
   background-image: url("./images/css5.svg");
   background-size: cover;
   background-position: center;
-  width: 65px;
-  height: 70px;
+  width: 40px;
+  height: 50px;
 }
 
 .javascript {
   background-image: url("./images/javascript1.svg");
   background-size: cover;
   background-position: center;
-  width: 65px;
-  height: 70px;
+  width: 40px;
+  height: 50px;
 }
 
 .react {
   background-image: url("./images/react2.svg");
   background-size: cover;
   background-position: center;
-  width: 65px;
-  height: 70px;
+  width: 40px;
+  height: 50px;
 }
 .logos {
   display: flex;
@@ -91,23 +91,33 @@
 
 .logos span {
   display: flex;
-  margin-top: 80px;
-  margin-left: 10px;
+  margin-top: 70px;
+  margin-left: 8px;
 }
 
 .logos .javascript span {
   display: block;
-  margin-left: -5px;
+  margin-left: -20px;
 }
 
+.logos .css span {
+  display: block;
+  margin-left: 2px;
+}
 
+.logos .react span {
+  display: block;
+  margin-left: -2px;
+}
 
 .about--p {
   width: 100%;
+  font-size: 14px;
 }
 
 .stack{
   margin-top: 30px;
+  font-size: 20px;
 }
 .btns li {
   display: inline;
@@ -118,7 +128,7 @@
   background-color: rgb(235, 204, 166);
   color: #1f2235;
   border-radius: 20px;
-  padding: 10px 50px;
+  padding: 6px 30px;
   display: inline-flex;
   margin-top: 80px;
   text-align: center;
@@ -130,6 +140,7 @@
   cursor: pointer;
   border: #f5d1d1 solid;
 }
+
 
 @media (max-width: 1024px) {
   .profile-picture {
@@ -159,6 +170,94 @@ margin-left: 12px;
   }
 }
 
+@media (max-width: 912px) {
+  .html, .css, .javascript, .react {
+    width: 40px;
+    height: 47px;
+  }
+
+  .logos span{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 854px) {
+  .profile-picture {
+    width: 100%;
+  }
+  .about--p{
+    font-size: 11px;
+  }
+  .stack{
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .html, .css, .javascript, .react {
+    
+    width: 30px;
+    height: 37px;
+    margin-top: 20px;
+  }
+  .logos{
+    margin-top: 5px;
+  }
+  .logos .javascript, .react{
+    margin-top: 20px;
+  }
+   .logos span{
+    margin-top: 63px;
+    font-size: 10px;
+   }
+  .btn-link {
+    padding: 8px 18px;
+    font-size: 14px;
+    margin-top: 80px;
+
+  }
+  li:last-child{
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 821px) {
+  .profile-picture {
+    width: 100%;
+  }
+  .about--p{
+    font-size: 11px;
+  }
+  .stack{
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .html, .css, .javascript, .react {
+    
+    width: 30px;
+    height: 37px;
+    margin-top: 20px;
+  }
+  .logos{
+    margin-top: 5px;
+  }
+  .logos .javascript, .react{
+    margin-top: 20px;
+  }
+   .logos span{
+    margin-top: 63px;
+    font-size: 10px;
+   }
+  .btn-link {
+    padding: 8px 18px;
+    font-size: 14px;
+    margin-top: 80px;
+
+  }
+  li:last-child{
+    margin-left: 5px;
+  }
+}
+
+
 @media (max-width: 768px) {
   .profile-picture {
     width: 100%;
@@ -168,34 +267,127 @@ margin-left: 12px;
   }
   .stack{
     font-size: 18px;
-    margin-top: 7px;
+    margin-top: 30px;
   }
   .html, .css, .javascript, .react {
-    width: 60px;
-    height: 57px;
+    
+    width: 30px;
+    height: 37px;
+    margin-top: 20px;
   }
   .logos{
     margin-top: 5px;
   }
   .logos .javascript, .react{
-    margin-top: 45px;
+    margin-top: 20px;
   }
-  .html span, .css span{
+   .logos span{
     margin-top: 63px;
-  }
-  .javascript span, .react span{
-    margin-top: 63px;
-  }
+    font-size: 10px;
+   }
   .btn-link {
     padding: 8px 18px;
     font-size: 14px;
-    margin-top: 60px;
+    margin-top: 80px;
 
   }
   li:last-child{
     margin-left: 5px;
   }
 }
+
+@media (max-width: 540px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+  }
+  .profile-picture {
+ 
+    width: 250px;
+    height: 400px;
+  }
+  .about--text{
+    margin-left: 40px;
+    font-size: 20px;
+  }
+  .about--p{
+    margin-top: -35px;
+    font-size: 13px;
+  }
+  .html, 
+  .css, 
+  .javascript, 
+  .react {
+    width: 40px;
+    height: 45px;
+    margin-left: -40px;
+    margin-top: 40px;
+  }
+  .logos .javascript{
+    margin-top: 40px;
+  }
+  .logos span{
+    font-size: 10px;
+  }
+  .stack{
+    margin-top: 50px;
+  }
+
+  .btn-link {
+    padding: 8px 22px;
+    font-size: 12px;
+    margin-top: 90px;
+  }
+}
+
+
+@media (max-width: 431px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+  }
+  .profile-picture {
+ 
+    width: 250px;
+    height: 400px;
+  }
+  .about--text{
+    margin-left: 40px;
+    font-size: 20px;
+  }
+  .about--p{
+    margin-top: -35px;
+    font-size: 13px;
+  }
+  .html, 
+  .css, 
+  .javascript, 
+  .react {
+    width: 40px;
+    height: 45px;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  .logos .javascript{
+    margin-top: 40px;
+  }
+  .logos span{
+    font-size: 10px;
+  }
+  .stack{
+    margin-top: 50px;
+  }
+
+  .btn-link {
+    padding: 8px 22px;
+    font-size: 12px;
+    margin-top: 90px;
+  }
+}
+
+
 
 @media (max-width: 426px) {
   .row {
@@ -291,7 +483,7 @@ margin-left: 12px;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    margin-left: 40px;
+    margin-left: 0px;
   }
     .profile-picture {
  
@@ -308,33 +500,38 @@ margin-left: 12px;
     .react {
       width: 35px;
       height: 40px;
-      margin-left: 0px;
+      margin-left: -30px;
       margin-top: 20px;
     }
     .logos .javascript{
       margin-top: 100px;
-      margin-left: -150px;
+      margin-left: -190px;
     }
     .logos .react{
       margin-top: 100px;
+
     }
     .logos span{
       font-size: 8px;
       margin-top: 50px;
-      margin-left: 2px;
+      margin-left: 8px;
+    }
+
+    .logos span:last-child{
+      margin-left: 5px;
     }
     .stack{
       margin-top: 40px;
     }
   
     .btn-link {
-      padding: 6px 12px;
+      padding: 6px 14px;
       font-size: 12px;
       margin-top: 60px;
       margin-left: 25px;
     }
     li:last-child{
-      margin-left: 15px;
+      margin-left: 0px;
     }
   
 }

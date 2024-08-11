@@ -4,6 +4,7 @@
   margin: 0 auto;
   margin-top: 20px;
   height: 100vh;
+  max-width: 100%;
 }
 
 .project--heading {
@@ -41,47 +42,49 @@
 .project--name {
   color: #fff;
   font-weight: 400;
-  font-size: 22px;
-  
+  font-size: 18px;
 }
 
 .project1 {
   background-image: url("./images/project1.jpg");
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 300px;
+  width: 90%;
+  height: 250px;
   display: flex;
   border-radius: 30px;
-  margin-right: 60px;
+  margin-left: 20px;
 }
 
 .project2 {
   background-image: url("./images/project2.jpg");
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 300px;
+  width: 90%;
+  height: 250px;
+  display: flex;
   border-radius: 30px;
- 
+  margin-left: 20px;
 }
 
 .project--btn1 {
   position: relative;
-  margin-top: 40px;
+  margin-top: 25px;
   border-radius: 20px;
   display: inline-flex;
   justify-content: center;
 }
 
-.live, .git {
+.live,
+.git {
   margin-left: 17px;
   background-color: rgb(235, 204, 166);
-  padding: 8px 40px;
+  padding: 8px 30px;
   border-radius: 20px;
 }
 
-.live:hover, .git:hover {
+.live:hover,
+.git:hover {
   background-color: #fff;
   color: rgb(235, 204, 166);
   cursor: pointer;
@@ -97,25 +100,94 @@
 
   .col2 {
     min-width: 250px;
+    
   }
+
   .project--name {
     font-size: 20px;
+    display: flex;
+    margin-top: 0px;
+  }
+
+  .project1 {
+    height: 200px;
+    margin-top: 50px;
+  }
+  .project2 {
+    height: 200px;
+    margin-top: 35px;
+  }
+
+  .live,
+  .git {
+    padding: 7px 20px;
+  }
+}
+
+@media (max-width: 854px) {
+  .project--heading {
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .project--name {
+    font-size: 15px;
     display: flex;
     margin-top: -70px;
   }
 
-  .project1{
-    
-    height: 300px;
+  .col2 {
+    min-width: 200px;
+  }
+
+  .project1 {
+    height: 200px;
     margin-top: 40px;
-  } 
+  }
   .project2 {
-    height: 300px;
+    height: 200px;
     margin-top: 25px;
   }
 
-  .live, .git {
-    padding: 7px 20px;
+  .live,
+  .git {
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 821px) {
+  .project--heading {
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .project--name {
+    font-size: 15px;
+    display: flex;
+    margin-top: -70px;
+  }
+
+  .col2 {
+    min-width: 200px;
+  }
+
+  .project1 {
+    height: 200px;
+    margin-top: 40px;
+  }
+  .project2 {
+    height: 200px;
+    margin-top: 25px;
+  }
+
+  .live,
+  .git {
+    padding: 7px 15px;
+    font-size: 12px;
   }
 }
 
@@ -136,18 +208,108 @@
     min-width: 200px;
   }
 
-  .project1{
+  .project1 {
     height: 200px;
     margin-top: 40px;
-  } 
+  }
   .project2 {
     height: 200px;
     margin-top: 25px;
   }
 
-  .live, .git {
+  .live,
+  .git {
     padding: 7px 15px;
     font-size: 12px;
+  }
+}
+
+
+
+@media (max-width: 540px) {
+  .project--heading {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .project--name {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .col2 {
+    min-width: 150px;
+  }
+
+  .project1 {
+    width: 100%;
+    height: 190px;
+    margin-left: 0px;
+  }
+
+  .project2{
+    width: 100%;
+    height: 195px;
+    margin-left: 0px;
+    
+  }
+
+  .live,
+  .git {
+    padding: 4px 10px;
+    font-size: 9px;
+  }
+
+  .row2 {
+    width: 80%;
+    margin: 100px auto;
+
+  }
+  .project--btn1 {
+    margin-left: -30px;
+  }
+}
+
+
+
+@media (max-width: 431px) {
+  .project--heading {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .project--name {
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+
+  .col2 {
+    min-width: 150px;
+  }
+
+  .project1,
+  .project2 {
+    width: 60%;
+    height: 100px;
+    margin-left: 50px;
+  }
+
+  .live,
+  .git {
+    padding: 4px 10px;
+    font-size: 9px;
+  }
+
+  .row2 {
+    width: 80%;
+    margin: 100px auto;
+  }
+  .project--btn1 {
+    margin-left: -30px;
   }
 }
 
@@ -159,27 +321,34 @@
   }
 
   .project--name {
-    font-size: 13px;
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: 50px;
   }
 
   .col2 {
     min-width: 150px;
   }
 
-  .project1, .project2 {
-    height: 150px;
+  .project1,
+  .project2 {
+    width: 60%;
+    height: 120px;
+    margin-left: 50px;
+    margin-top: 20px;
   }
 
-  .live, .git {
+  .live,
+  .git {
     padding: 4px 10px;
     font-size: 9px;
   }
 
   .row2 {
-    width: 90%;
+    width: 80%;
     margin: 100px auto;
   }
-  .project--btn1{
+  .project--btn1 {
     margin-left: -30px;
   }
 }
@@ -195,24 +364,33 @@
     font-size: 15px;
     display: flex;
     margin-top: -100px;
+    margin-left: 4px;
   }
- 
+
   .col2 {
     min-width: 150px;
   }
 
-  .project1{
+  .project1 {
+    width: 185px;
     height: 180px;
     margin-top: 50px;
-  }
-  
-  .project2 {
-    height: 185px;
-    margin-top: 50px;
+    margin-left: 2px;
   }
 
-  .live, .git {
-    padding: 8px 12px;
+  .project2 {
+    width: 200px;
+    height: 185px;
+    margin-top: 50px;
+    margin-left: 2px;
+  }
+
+  .live{
+    padding: 8px 14px;
+    font-size: 9px;
+  }
+  .git {
+    padding: 8px 14px;
     font-size: 9px;
   }
 
@@ -220,54 +398,95 @@
     width: 90%;
     margin: 100px auto;
   }
-  .project--btn1{
+  .project--btn1 {
     margin-left: -30px;
     margin-top: 60px;
-  } 
+  }
 }
 @media (max-width: 376px) {
-  .project1, .project2 {
-    width: 80%;
+  .project1,
+  .project2 {
+    width: 75%;
+    height: 150px;
     margin-left: 30px;
     margin-top: 5px;
   }
-  .project--name{
+  .project--name {
     font-size: 10px;
-    
   }
-  .project--name:first-child{
+  .project--name:first-child {
     margin-left: 300px;
     font-size: 9px;
   }
-  .project--name:last-child{
+  .project--name:last-child {
     margin-left: 50px;
     margin-top: -5px;
   }
-  .project--btn1{
+  .project--btn1 {
     margin-top: 10px;
   }
 }
 
-@media (max-width: 321px) {
+
+
+/* @media (max-width: 413px) {
+  .project1, .project2 {
+    margin-left: 5px;
+  }
+} */
+
+@media (max-width: 344px) {
   .row2 {
     width: 90%;
     margin: 60px 30px;
+    margin-left: 15px;
   }
   .project--heading {
     top: 5%;
     left: 54%;
     transform: translateX(-50%);
   }
-  .project--name:last-child{
+  .project--name:last-child {
     font-size: 8px;
-    
   }
-  .project1, .project2 {
+  .project1,
+  .project2 {
     height: 130px;
     margin-left: 30px;
   }
 
-  .live, .git {
+  .live,
+  .git {
+    padding: 4px 10px;
+    font-size: 9px;
+    margin-top: 10px;
+  }
+}
+
+
+
+@media (max-width: 321px) {
+  .row2 {
+    width: 90%;
+    margin: 60px 30px;
+    margin-left: 15px;
+  }
+  .project--heading {
+    top: 5%;
+    left: 54%;
+    transform: translateX(-50%);
+  }
+  .project--name:last-child {
+    font-size: 8px;
+  }
+  .project1,
+  .project2 {
+    height: 130px;
+    margin-left: 30px;
+  }
+
+  .live,
+  .git {
     padding: 4px 10px;
     font-size: 9px;
     margin-top: 10px;
