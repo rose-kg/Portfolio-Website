@@ -160,7 +160,6 @@
 margin-left: 12px;
   }
 
-
   .about--text{
     display: flex;
     margin-left: 85px;
@@ -176,6 +175,7 @@ margin-left: 12px;
     }
   .btn-link {
     padding: 8px 15px;
+    margin-top: 50px;
    
   }
 }

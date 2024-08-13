@@ -1,10 +1,10 @@
 #projects--section {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  min-height: 100vh; /* Ensure the section takes at least the full viewport height */
-  padding: 20px; /* Optional: Add padding if needed */
-  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  padding: 20px; 
+  box-sizing: border-box;
   background-color:  rgb(250, 236, 209);
 }
 
@@ -12,35 +12,35 @@
   text-align: center;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 650px;
+  margin-bottom: 50px;
   position: relative;
   top: 70%;
-  left: 37%;
+  left: 47%;
   transform: translate(-50%, 0%);
 }
 
 
-/* Ensure .row2 is centered with specific dimensions */
+
 .row2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 30px 0; /* Adjust margins as needed */
+  margin: 30px 0; 
   margin-right: 150px;
   background-color: #1f2235;
   border-radius: 30px;
-  /* padding: 30px; */
+  
  
   min-height: 550px;
-  box-shadow: 0px 4px 20px rgb(251, 153, 33); /* Added box shadow */
+  box-shadow: 0px 4px 20px rgb(251, 153, 33); 
 }
 
-/* Flexbox layout for the project columns */
+
 .col2 {
-  flex: 1 1 300px; /* Adjust flex-grow and flex-shrink */
-  max-width: 45%; /* Prevents columns from getting too wide */
+  flex: 1 1 300px;
+  max-width: 45%; 
   margin: 10px;
   text-align: center;
 }
@@ -98,7 +98,7 @@
   border: #f5d1d1 solid;
 }
 
-/* Responsive design for various screen sizes */
+
 @media (max-width: 1024px) {
   .col2 {
     min-width: 250px;
@@ -112,9 +112,9 @@
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 650px;
+    margin-bottom: 20px;
     position: relative;
-    top: 70%;
+    top: 10%;
     left: 47%;
     transform: translate(-50%, 0%);
   }
@@ -199,10 +199,17 @@
     margin-top: 10px;
     margin-left: -10px;
   }
+  .row2{
+    margin-bottom: 30px;
+  }
+  .project--heading{
+    margin-top: 30px;
+  }
   .project1, .project2 {
     width: 100%;
     height: 100px;
     margin-left: 0px;
+   
   }
   .live, .git {
     padding: 3px 9px;
@@ -217,9 +224,9 @@
 
 @media (max-width: 376px) {
   .project1, .project2 {
-    width: 75%;
+    width: 90%;
     height: 150px;
-    margin-left: 30px;
+    margin-left: 15px;
     margin-top: 5px;
   }
   .project--name {
@@ -250,4 +257,10 @@
     font-size: 9px;
     margin-top: 10px;
   }
+}
+@media (max-width: 344px) {
+  .project1, .project2 {
+margin-left: 10px;
+  }
+
 }
