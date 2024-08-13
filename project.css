@@ -1,40 +1,46 @@
 #projects--section {
-  overflow: hidden;
-  width: 100vw;
-  margin: 0 auto;
-  margin-top: 20px;
-  height: 100vh;
-  max-width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Ensure the section takes at least the full viewport height */
+  padding: 20px; /* Optional: Add padding if needed */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+  background-color:  rgb(250, 236, 209);
 }
 
 .project--heading {
-  position: relative;
-  top: 2%;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
   font-size: 24px;
   font-weight: bold;
-  text-align: center;
+  margin-bottom: 650px;
+  position: relative;
+  top: 70%;
+  left: 37%;
+  transform: translate(-50%, 0%);
 }
 
+
+/* Ensure .row2 is centered with specific dimensions */
 .row2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border: 3px solid black;
-  overflow: hidden;
-  width: 60%;
-  height: 72vh;
+  width: 100%;
+  margin: 30px 0; /* Adjust margins as needed */
+  margin-right: 150px;
   background-color: #1f2235;
   border-radius: 30px;
-  margin: 30px auto 0;
+  /* padding: 30px; */
+ 
+  min-height: 550px;
+  box-shadow: 0px 4px 20px rgb(251, 153, 33); /* Added box shadow */
 }
 
+/* Flexbox layout for the project columns */
 .col2 {
-  flex: 1;
-  min-width: 300px;
-  max-width: 350px;
+  flex: 1 1 300px; /* Adjust flex-grow and flex-shrink */
+  max-width: 45%; /* Prevents columns from getting too wide */
   margin: 10px;
   text-align: center;
 }
@@ -42,370 +48,175 @@
 .project--name {
   color: #fff;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  
+
 }
 
 .project1 {
   background-image: url("./images/project1.jpg");
   background-size: cover;
   background-position: center;
-  width: 90%;
+  width: 80%;
   height: 250px;
   display: flex;
   border-radius: 30px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .project2 {
   background-image: url("./images/project2.jpg");
   background-size: cover;
   background-position: center;
-  width: 90%;
+  width: 80%;
   height: 250px;
   display: flex;
   border-radius: 30px;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 .project--btn1 {
-  position: relative;
   margin-top: 25px;
-  border-radius: 20px;
   display: inline-flex;
   justify-content: center;
-}
-
-.live,
-.git {
-  margin-left: 17px;
-  background-color: rgb(235, 204, 166);
-  padding: 8px 30px;
   border-radius: 20px;
 }
 
-.live:hover,
-.git:hover {
+.live, .git {
+  margin-left: 17px;
+  background-color: rgb(235, 204, 166);
+  padding: 8px 20px;
+  border-radius: 20px;
+}
+
+.live:hover, .git:hover {
   background-color: #fff;
   color: rgb(235, 204, 166);
   cursor: pointer;
   border: #f5d1d1 solid;
 }
 
+/* Responsive design for various screen sizes */
 @media (max-width: 1024px) {
-  .project--heading {
-    top: 2%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
   .col2 {
     min-width: 250px;
+  }
+  .project--name {
+    font-size: 20px;
     
   }
 
-  .project--name {
-    font-size: 20px;
-    display: flex;
-    margin-top: 0px;
+  .project--heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 650px;
+    position: relative;
+    top: 70%;
+    left: 47%;
+    transform: translate(-50%, 0%);
   }
-
-  .project1 {
+  .project1{
     height: 200px;
-    margin-top: 50px;
   }
+  
   .project2 {
-    height: 200px;
-    margin-top: 35px;
+    height: 210px;
+    margin-bottom: 5px;
+    
   }
-
-  .live,
-  .git {
-    padding: 7px 20px;
+  .live, .git {
+    padding: 6px 18px;
   }
 }
 
 @media (max-width: 854px) {
-  .project--heading {
-    top: 3%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .project--name {
-    font-size: 15px;
-    display: flex;
-    margin-top: -70px;
-  }
-
   .col2 {
     min-width: 200px;
   }
-
-  .project1 {
+  .project--name {
+    font-size: 15px;
+    margin-top: -70px;
+  }
+  .project1, .project2 {
     height: 200px;
     margin-top: 40px;
   }
-  .project2 {
-    height: 200px;
-    margin-top: 25px;
-  }
-
-  .live,
-  .git {
+  .live, .git {
     padding: 7px 15px;
     font-size: 12px;
   }
 }
 
-
-@media (max-width: 821px) {
-  .project--heading {
-    top: 3%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .project--name {
-    font-size: 15px;
-    display: flex;
-    margin-top: -70px;
-  }
-
-  .col2 {
-    min-width: 200px;
-  }
-
-  .project1 {
-    height: 200px;
-    margin-top: 40px;
-  }
-  .project2 {
-    height: 200px;
-    margin-top: 25px;
-  }
-
-  .live,
-  .git {
-    padding: 7px 15px;
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 768px) {
-  .project--heading {
-    top: 3%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .project--name {
-    font-size: 15px;
-    display: flex;
-    margin-top: -70px;
-  }
-
-  .col2 {
-    min-width: 200px;
-  }
-
-  .project1 {
-    height: 200px;
-    margin-top: 40px;
-  }
-  .project2 {
-    height: 200px;
-    margin-top: 25px;
-  }
-
-  .live,
-  .git {
-    padding: 7px 15px;
-    font-size: 12px;
-  }
-}
-
-
-
-@media (max-width: 540px) {
-  .project--heading {
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .project--name {
-    font-size: 14px;
-    margin-top: 10px;
-    margin-left: 0px;
-  }
-
-  .col2 {
-    min-width: 150px;
-  }
-
-  .project1 {
-    width: 100%;
-    height: 190px;
-    margin-left: 0px;
-  }
-
-  .project2{
-    width: 100%;
-    height: 195px;
-    margin-left: 0px;
-    
-  }
-
-  .live,
-  .git {
-    padding: 4px 10px;
-    font-size: 9px;
-  }
-
-  .row2 {
-    width: 80%;
-    margin: 100px auto;
-
-  }
-  .project--btn1 {
-    margin-left: -30px;
-  }
-}
-
-
-
-@media (max-width: 431px) {
-  .project--heading {
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .project--name {
-    font-size: 8px;
-    margin-top: 10px;
-    margin-left: 50px;
-  }
-
-  .col2 {
-    min-width: 150px;
-  }
-
-  .project1,
-  .project2 {
-    width: 60%;
-    height: 100px;
-    margin-left: 50px;
-  }
-
-  .live,
-  .git {
-    padding: 4px 10px;
-    font-size: 9px;
-  }
-
-  .row2 {
-    width: 80%;
-    margin: 100px auto;
-  }
-  .project--btn1 {
-    margin-left: -30px;
-  }
-}
-
-@media (max-width: 426px) {
-  .project--heading {
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .project--name {
-    font-size: 8px;
-    margin-top: 10px;
-    margin-left: 50px;
-  }
-
-  .col2 {
-    min-width: 150px;
-  }
-
-  .project1,
-  .project2 {
-    width: 60%;
-    height: 120px;
-    margin-left: 50px;
-    margin-top: 20px;
-  }
-
-  .live,
-  .git {
-    padding: 4px 10px;
-    font-size: 9px;
-  }
-
-  .row2 {
-    width: 80%;
-    margin: 100px auto;
-  }
-  .project--btn1 {
-    margin-left: -30px;
-  }
-}
-
-@media (max-width: 391px) {
-  .project--heading {
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .project--name {
-    font-size: 15px;
-    display: flex;
-    margin-top: -100px;
-    margin-left: 4px;
-  }
-
-  .col2 {
-    min-width: 150px;
-  }
-
-  .project1 {
-    width: 185px;
-    height: 180px;
-    margin-top: 50px;
-    margin-left: 2px;
-  }
-
-  .project2 {
-    width: 200px;
-    height: 185px;
-    margin-top: 50px;
-    margin-left: 2px;
-  }
-
-  .live{
-    padding: 8px 14px;
-    font-size: 9px;
-  }
-  .git {
-    padding: 8px 14px;
-    font-size: 9px;
-  }
-
+@media (max-width: 541px) {
   .row2 {
     width: 90%;
-    margin: 100px auto;
+    padding: 20px;
+    min-height: 500px;
+   
   }
-  .project--btn1 {
-    margin-left: -30px;
-    margin-top: 60px;
+  .col2 {
+    min-width: 150px;
+  }
+  .project1, .project2 {
+    height: 190px;
+    margin-left: 30px;
+  }
+  .live, .git {
+    padding: 4px 10px;
+    font-size: 9px;
   }
 }
+
+@media (max-width: 431px) {
+  .project--name {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: -20px;
+  }
+  .project1, .project2 {
+    width: 100%;
+    height: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .live, .git {
+    padding: 4px 5px;
+    font-size: 9px;
+    
+  }
+  .row2 {
+    width: 80%;
+    margin: 100px auto;
+    min-height: 400px;
+  }
+}
+@media (max-width: 426px) {
+  .project--name {
+    font-size: 8px;
+    margin-top: 10px;
+    margin-left: -10px;
+  }
+  .project1, .project2 {
+    width: 100%;
+    height: 100px;
+    margin-left: 0px;
+  }
+  .live, .git {
+    padding: 3px 9px;
+    font-size: 9px;
+  }
+  .row2 {
+    width: 80%;
+    margin: 100px auto;
+    min-height: 400px;
+  }
+}
+
 @media (max-width: 376px) {
-  .project1,
-  .project2 {
+  .project1, .project2 {
     width: 75%;
     height: 150px;
     margin-left: 30px;
@@ -414,79 +225,27 @@
   .project--name {
     font-size: 10px;
   }
-  .project--name:first-child {
-    margin-left: 300px;
-    font-size: 9px;
-  }
-  .project--name:last-child {
-    margin-left: 50px;
-    margin-top: -5px;
-  }
   .project--btn1 {
     margin-top: 10px;
+    padding: 0px 14px;
   }
 }
-
-
-
-/* @media (max-width: 413px) {
-  .project1, .project2 {
-    margin-left: 5px;
-  }
-} */
 
 @media (max-width: 344px) {
   .row2 {
     width: 90%;
     margin: 60px 30px;
     margin-left: 15px;
-  }
-  .project--heading {
-    top: 5%;
-    left: 54%;
-    transform: translateX(-50%);
+    min-height: 350px;
   }
   .project--name:last-child {
     font-size: 8px;
   }
-  .project1,
-  .project2 {
+  .project1, .project2 {
     height: 130px;
     margin-left: 30px;
   }
-
-  .live,
-  .git {
-    padding: 4px 10px;
-    font-size: 9px;
-    margin-top: 10px;
-  }
-}
-
-
-
-@media (max-width: 321px) {
-  .row2 {
-    width: 90%;
-    margin: 60px 30px;
-    margin-left: 15px;
-  }
-  .project--heading {
-    top: 5%;
-    left: 54%;
-    transform: translateX(-50%);
-  }
-  .project--name:last-child {
-    font-size: 8px;
-  }
-  .project1,
-  .project2 {
-    height: 130px;
-    margin-left: 30px;
-  }
-
-  .live,
-  .git {
+  .live, .git {
     padding: 4px 10px;
     font-size: 9px;
     margin-top: 10px;
